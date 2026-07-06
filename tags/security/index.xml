@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Security on Isaac Maciel</title><link>https://seudominio.com/tags/security/</link><description>Recent content in Security on Isaac Maciel</description><generator>Hugo</generator><language>pt-br</language><lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://seudominio.com/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Sistema AntiCheat em Python</title><link>https://seudominio.com/projects/anti-cheat/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://seudominio.com/projects/anti-cheat/</guid><description>&lt;h2 id="-visão-geral"&gt;🔍 Visão geral&lt;/h2&gt;
+&lt;p&gt;Sistema de varredura de arquivos suspeitos em computadores.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-funcionalidades"&gt;⚙️ Funcionalidades&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Scan de diretórios do sistema&lt;/li&gt;
+&lt;li&gt;Hash SHA256 para validação&lt;/li&gt;
+&lt;li&gt;Detecção de padrões suspeitos&lt;/li&gt;
+&lt;li&gt;Exportação CSV&lt;/li&gt;
+&lt;li&gt;Integração com Discord&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-tecnologias"&gt;🧠 Tecnologias&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;psutil&lt;/li&gt;
+&lt;li&gt;hashlib&lt;/li&gt;
+&lt;li&gt;tqdm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-resultado"&gt;📌 Resultado&lt;/h2&gt;
+&lt;p&gt;Sistema capaz de analisar milhares de arquivos com performance otimizada.&lt;/p&gt;</description></item></channel></rss>
