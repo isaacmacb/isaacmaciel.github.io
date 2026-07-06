@@ -1,0 +1,40 @@
+baseURL = "https://seudominio.com/"
+languageCode = "pt-br"
+title = "Isaac Maciel"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "dark"
+  showReadingTime = true
+  showShareButtons = true
+
+  homeInfoParams = { Title = "Olá, eu sou Isaac 👋", Content = "Desenvolvedor Backend | Python | Java | Sistemas" }
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projetos"
+    url = "/projects/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Artigos"
+    url = "/posts/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contato"
+    url = "/contact/"
+    weight = 40
+
+   [params.assets]
+  customCSS = ["css/custom.css"]

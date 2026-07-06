@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home on Isaac Maciel</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Isaac Maciel</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automação de Servidores (Python)</title>
+      <link>http://localhost:1313/projects/automacao-python/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/automacao-python/</guid>
+      <description>&lt;p&gt;Criação de robôs e scripts em Python para automação de tarefas em servidores.&lt;/p&gt;
+&lt;p&gt;Objetivo: reduzir processos manuais e aumentar eficiência operacional.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Como construí meu primeiro sistema de segurança</title>
+      <link>http://localhost:1313/posts/primeiro-post/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/primeiro-post/</guid>
+      <description>&lt;p&gt;Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;o-problema&#34;&gt;O problema&lt;/h2&gt;
+&lt;p&gt;Detectar arquivos maliciosos em ambientes locais.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-solução&#34;&gt;A solução&lt;/h2&gt;
+&lt;p&gt;Uso de hash SHA256 + padrões de nome + análise de diretórios.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;aprendizado&#34;&gt;Aprendizado&lt;/h2&gt;
+&lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dashboards Empresariais</title>
+      <link>http://localhost:1313/projects/dashboards/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dashboards/</guid>
+      <description>&lt;p&gt;Desenvolvimento de dashboards para diferentes áreas de negócio:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financeiro&lt;/li&gt;
+&lt;li&gt;Recursos Humanos&lt;/li&gt;
+&lt;li&gt;Marketing&lt;/li&gt;
+&lt;li&gt;Comercial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Foco em visualização de dados e suporte à tomada de decisão.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Otimizador de Sistema (C#)</title>
+      <link>http://localhost:1313/projects/otimizador-csharp/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/otimizador-csharp/</guid>
+      <description>&lt;p&gt;Projeto em desenvolvimento focado em otimização de desempenho e uso eficiente de recursos do sistema.&lt;/p&gt;
+&lt;p&gt;Foco em melhorar performance e reduzir consumo de recursos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sistema AntiCheat em Python</title>
+      <link>http://localhost:1313/projects/anti-cheat/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/anti-cheat/</guid>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;🔍 Visão geral&lt;/h2&gt;
+&lt;p&gt;Sistema de varredura de arquivos suspeitos em computadores.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Scan de diretórios do sistema&lt;/li&gt;
+&lt;li&gt;Hash SHA256 para validação&lt;/li&gt;
+&lt;li&gt;Detecção de padrões suspeitos&lt;/li&gt;
+&lt;li&gt;Exportação CSV&lt;/li&gt;
+&lt;li&gt;Integração com Discord&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-tecnologias&#34;&gt;🧠 Tecnologias&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;psutil&lt;/li&gt;
+&lt;li&gt;hashlib&lt;/li&gt;
+&lt;li&gt;tqdm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-resultado&#34;&gt;📌 Resultado&lt;/h2&gt;
+&lt;p&gt;Sistema capaz de analisar milhares de arquivos com performance otimizada.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sistema de Estoque (Spring Boot)</title>
+      <link>http://localhost:1313/projects/estoque-spring/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/estoque-spring/</guid>
+      <description>&lt;p&gt;Sistema backend em construção para controle de estoque.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CRUD de produtos&lt;/li&gt;
+&lt;li&gt;Organização de dados&lt;/li&gt;
+&lt;li&gt;Estrutura escalável&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Contato</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h2 id=&#34;entre-em-contato&#34;&gt;Entre em contato&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/isaacmacb&#34;&gt;https://github.com/isaacmacb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:isaacmacielbe@gmail.com&#34;&gt;isaacmacielbe@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&#34;&gt;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Sobre mim</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Sou desenvolvedor Backend focado na construção de sistemas, automação e ferramentas de segurança.&lt;/p&gt;
+&lt;p&gt;Sou fundador da ADVANNCE, empresa inicialmente criada como projeto de aprendizado que evoluiu para uma fonte de renda e desenvolvimento contínuo de soluções.&lt;/p&gt;
+&lt;p&gt;Atuo principalmente com C# e Java, desenvolvendo aplicações voltadas para APIs, análise de dados e automação de processos, com foco em desempenho, escalabilidade e organização de código.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-foco-profissional&#34;&gt;🎯 Foco profissional&lt;/h2&gt;
+&lt;p&gt;Meu foco principal está em:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
