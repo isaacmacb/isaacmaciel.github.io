@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ubuntu on Isaac Maciel</title><link>https://isaacspace.netlify.app/tags/ubuntu/</link><description>Recent content in Ubuntu on Isaac Maciel</description><generator>Hugo</generator><language>pt-br</language><lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://isaacspace.netlify.app/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Como Transformei um Notebook Antigo em um Servidor Ubuntu</title><link>https://isaacspace.netlify.app/posts/serv/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://isaacspace.netlify.app/posts/serv/</guid><description>&lt;p&gt;Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="o-objetivo"&gt;O objetivo&lt;/h2&gt;
+&lt;p&gt;Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="hardware-utilizado"&gt;Hardware utilizado&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook antigo&lt;/li&gt;
+&lt;li&gt;SSD para melhorar o desempenho&lt;/li&gt;
+&lt;li&gt;Conexão de rede cabeada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="instalação-do-ubuntu-server"&gt;Instalação do Ubuntu Server&lt;/h2&gt;
+&lt;p&gt;O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.&lt;/p&gt;</description></item></channel></rss>

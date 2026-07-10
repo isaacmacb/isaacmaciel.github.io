@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Etl on Isaac Maciel</title><link>https://isaacspace.netlify.app/tags/etl/</link><description>Recent content in Etl on Isaac Maciel</description><generator>Hugo</generator><language>pt-br</language><lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://isaacspace.netlify.app/tags/etl/index.xml" rel="self" type="application/rss+xml"/><item><title>ETL na Prática: Transformando Dados em Informação Estratégica</title><link>https://isaacspace.netlify.app/posts/etl-pratica/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://isaacspace.netlify.app/posts/etl-pratica/</guid><description>&lt;h1 id="etl-na-prática-transformando-dados-em-informação-estratégica"&gt;ETL na Prática: Transformando Dados em Informação Estratégica&lt;/h1&gt;
+&lt;h2 id="introdução"&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.&lt;/p&gt;
+&lt;p&gt;O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id="o-que-é-etl"&gt;O que é ETL?&lt;/h1&gt;
+&lt;p&gt;ETL representa três etapas fundamentais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extract (Extração)&lt;/li&gt;
+&lt;li&gt;Transform (Transformação)&lt;/li&gt;
+&lt;li&gt;Load (Carga)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description></item></channel></rss>
