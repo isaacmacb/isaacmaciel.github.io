@@ -34,7 +34,18 @@ url = "/posts/"
 weight = 30
 
 [[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv/"
+weight = 35
+
+[[menu.main]]
 identifier = "contact"
 name = "Contato"
 url = "/contact/"
 weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

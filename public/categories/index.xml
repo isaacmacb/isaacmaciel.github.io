@@ -6,6 +6,28 @@
     <description>Recent content in Categories on Isaac Maciel</description>
     <generator>Hugo</generator>
     <language>pt-br</language>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>http://localhost:1313/categories/backend/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Intelligence</title>
+      <link>http://localhost:1313/categories/business-intelligence/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/business-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dados</title>
+      <link>http://localhost:1313/categories/dados/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/dados/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

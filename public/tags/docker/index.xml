@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Isaac Maciel</title>
+    <link>http://localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on Isaac Maciel</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Transformei um Notebook Antigo em um Servidor Ubuntu</title>
+      <link>http://localhost:1313/posts/serv/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/serv/</guid>
+      <description>&lt;p&gt;Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;o-objetivo&#34;&gt;O objetivo&lt;/h2&gt;
+&lt;p&gt;Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hardware-utilizado&#34;&gt;Hardware utilizado&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook antigo&lt;/li&gt;
+&lt;li&gt;SSD para melhorar o desempenho&lt;/li&gt;
+&lt;li&gt;Conexão de rede cabeada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;instalação-do-ubuntu-server&#34;&gt;Instalação do Ubuntu Server&lt;/h2&gt;
+&lt;p&gt;O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
+      <link>http://localhost:1313/posts/docker/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker/</guid>
+      <description>&lt;h1 id=&#34;docker-para-desenvolvedores-backend-da-máquina-local-à-produção&#34;&gt;Docker para Desenvolvedores Backend: Da Máquina Local à Produção&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.&lt;/p&gt;
+&lt;p&gt;O Docker surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;o-que-é-docker&#34;&gt;O que é Docker?&lt;/h1&gt;
+&lt;p&gt;Docker é uma plataforma de containers que permite empacotar aplicações junto com suas dependências.&lt;/p&gt;
+&lt;p&gt;Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
+      <link>http://localhost:1313/posts/modelage/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/modelage/</guid>
+      <description>&lt;h1 id=&#34;modelagem-de-banco-de-dados-para-alta-performance&#34;&gt;Modelagem de Banco de Dados para Alta Performance&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.&lt;/p&gt;
+&lt;h2 id=&#34;conceitos-fundamentais&#34;&gt;Conceitos Fundamentais&lt;/h2&gt;
+&lt;p&gt;Os modelos geralmente são divididos em:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conceitual&lt;/li&gt;
+&lt;li&gt;Lógico&lt;/li&gt;
+&lt;li&gt;Físico&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chaves-e-relacionamentos&#34;&gt;Chaves e Relacionamentos&lt;/h2&gt;
+&lt;p&gt;Elementos essenciais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chave Primária&lt;/li&gt;
+&lt;li&gt;Chave Estrangeira&lt;/li&gt;
+&lt;li&gt;Relacionamentos&lt;/li&gt;
+&lt;li&gt;Índices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;normalização&#34;&gt;Normalização&lt;/h2&gt;
+&lt;p&gt;A normalização reduz redundâncias e melhora a consistência dos dados.&lt;/p&gt;
+&lt;p&gt;Principais formas normais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1FN&lt;/li&gt;
+&lt;li&gt;2FN&lt;/li&gt;
+&lt;li&gt;3FN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;otimização&#34;&gt;Otimização&lt;/h2&gt;
+&lt;p&gt;Algumas práticas importantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Criar índices adequados&lt;/li&gt;
+&lt;li&gt;Evitar SELECT *&lt;/li&gt;
+&lt;li&gt;Utilizar filtros eficientes&lt;/li&gt;
+&lt;li&gt;Monitorar consultas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;benefícios&#34;&gt;Benefícios&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Melhor desempenho&lt;/li&gt;
+&lt;li&gt;Menor redundância&lt;/li&gt;
+&lt;li&gt;Maior integridade&lt;/li&gt;
+&lt;li&gt;Facilidade de manutenção&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;Investir em modelagem de dados é essencial para construir sistemas preparados para crescimento sustentável.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

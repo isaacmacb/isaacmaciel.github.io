@@ -9,6 +9,34 @@
     <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arquitetura de APIs REST para Sistemas Corporativos</title>
+      <link>http://localhost:1313/posts/api-rest-sistemas-corporativos/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/api-rest-sistemas-corporativos/</guid>
+      <description>&lt;h1 id=&#34;arquitetura-de-apis-rest-para-sistemas-corporativos&#34;&gt;Arquitetura de APIs REST para Sistemas Corporativos&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;As APIs REST tornaram-se o principal mecanismo de integração entre aplicações modernas. Uma arquitetura bem planejada contribui para a escalabilidade, manutenção e segurança dos sistemas.&lt;/p&gt;
+&lt;h2 id=&#34;o-que-é-uma-api-rest&#34;&gt;O que é uma API REST?&lt;/h2&gt;
+&lt;p&gt;Uma API REST permite que aplicações troquem informações através do protocolo HTTP.&lt;/p&gt;
+&lt;p&gt;Principais métodos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GET&lt;/li&gt;
+&lt;li&gt;POST&lt;/li&gt;
+&lt;li&gt;PUT&lt;/li&gt;
+&lt;li&gt;DELETE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;estrutura-recomendada&#34;&gt;Estrutura Recomendada&lt;/h2&gt;
+&lt;p&gt;Uma arquitetura backend geralmente é composta por:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller&lt;/li&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;Repository&lt;/li&gt;
+&lt;li&gt;DTO&lt;/li&gt;
+&lt;li&gt;Entity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Essa separação favorece a organização e a manutenção do código.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Automação de Servidores (Python)</title>
       <link>http://localhost:1313/projects/automacao-python/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
@@ -33,6 +61,27 @@
 &lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Como Transformei um Notebook Antigo em um Servidor Ubuntu</title>
+      <link>http://localhost:1313/posts/serv/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/serv/</guid>
+      <description>&lt;p&gt;Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;o-objetivo&#34;&gt;O objetivo&lt;/h2&gt;
+&lt;p&gt;Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hardware-utilizado&#34;&gt;Hardware utilizado&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook antigo&lt;/li&gt;
+&lt;li&gt;SSD para melhorar o desempenho&lt;/li&gt;
+&lt;li&gt;Conexão de rede cabeada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;instalação-do-ubuntu-server&#34;&gt;Instalação do Ubuntu Server&lt;/h2&gt;
+&lt;p&gt;O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Dashboards Empresariais</title>
       <link>http://localhost:1313/projects/dashboards/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
@@ -45,6 +94,111 @@
 &lt;li&gt;Comercial&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Foco em visualização de dados e suporte à tomada de decisão.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dashboards Inteligentes: Transformando Dados em Decisões</title>
+      <link>http://localhost:1313/posts/dashboard/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dashboard/</guid>
+      <description>&lt;h1 id=&#34;dashboards-inteligentes-transformando-dados-em-decisões&#34;&gt;Dashboards Inteligentes: Transformando Dados em Decisões&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Empresas modernas precisam tomar decisões rápidas e baseadas em informações confiáveis.&lt;/p&gt;
+&lt;p&gt;Os dashboards surgem como ferramentas fundamentais para transformar dados complexos em visualizações simples e estratégicas.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;o-que-é-um-dashboard&#34;&gt;O que é um Dashboard?&lt;/h1&gt;
+&lt;p&gt;Um dashboard é uma representação visual de informações importantes para acompanhamento de indicadores.&lt;/p&gt;
+&lt;p&gt;Ele permite:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitorar resultados;&lt;/li&gt;
+&lt;li&gt;Identificar problemas;&lt;/li&gt;
+&lt;li&gt;Encontrar oportunidades;&lt;/li&gt;
+&lt;li&gt;Apoiar decisões.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;a-importância-dos-kpis&#34;&gt;A importância dos KPIs&lt;/h1&gt;
+&lt;p&gt;Os KPIs (Key Performance Indicators) são indicadores utilizados para medir desempenho.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
+      <link>http://localhost:1313/posts/docker/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker/</guid>
+      <description>&lt;h1 id=&#34;docker-para-desenvolvedores-backend-da-máquina-local-à-produção&#34;&gt;Docker para Desenvolvedores Backend: Da Máquina Local à Produção&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.&lt;/p&gt;
+&lt;p&gt;O Docker surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;o-que-é-docker&#34;&gt;O que é Docker?&lt;/h1&gt;
+&lt;p&gt;Docker é uma plataforma de containers que permite empacotar aplicações junto com suas dependências.&lt;/p&gt;
+&lt;p&gt;Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
+      <link>http://localhost:1313/posts/modelage/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/modelage/</guid>
+      <description>&lt;h1 id=&#34;modelagem-de-banco-de-dados-para-alta-performance&#34;&gt;Modelagem de Banco de Dados para Alta Performance&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.&lt;/p&gt;
+&lt;h2 id=&#34;conceitos-fundamentais&#34;&gt;Conceitos Fundamentais&lt;/h2&gt;
+&lt;p&gt;Os modelos geralmente são divididos em:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conceitual&lt;/li&gt;
+&lt;li&gt;Lógico&lt;/li&gt;
+&lt;li&gt;Físico&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chaves-e-relacionamentos&#34;&gt;Chaves e Relacionamentos&lt;/h2&gt;
+&lt;p&gt;Elementos essenciais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chave Primária&lt;/li&gt;
+&lt;li&gt;Chave Estrangeira&lt;/li&gt;
+&lt;li&gt;Relacionamentos&lt;/li&gt;
+&lt;li&gt;Índices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;normalização&#34;&gt;Normalização&lt;/h2&gt;
+&lt;p&gt;A normalização reduz redundâncias e melhora a consistência dos dados.&lt;/p&gt;
+&lt;p&gt;Principais formas normais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1FN&lt;/li&gt;
+&lt;li&gt;2FN&lt;/li&gt;
+&lt;li&gt;3FN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;otimização&#34;&gt;Otimização&lt;/h2&gt;
+&lt;p&gt;Algumas práticas importantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Criar índices adequados&lt;/li&gt;
+&lt;li&gt;Evitar SELECT *&lt;/li&gt;
+&lt;li&gt;Utilizar filtros eficientes&lt;/li&gt;
+&lt;li&gt;Monitorar consultas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;benefícios&#34;&gt;Benefícios&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Melhor desempenho&lt;/li&gt;
+&lt;li&gt;Menor redundância&lt;/li&gt;
+&lt;li&gt;Maior integridade&lt;/li&gt;
+&lt;li&gt;Facilidade de manutenção&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;Investir em modelagem de dados é essencial para construir sistemas preparados para crescimento sustentável.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ETL na Prática: Transformando Dados em Informação Estratégica</title>
+      <link>http://localhost:1313/posts/etl-pratica/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/etl-pratica/</guid>
+      <description>&lt;h1 id=&#34;etl-na-prática-transformando-dados-em-informação-estratégica&#34;&gt;ETL na Prática: Transformando Dados em Informação Estratégica&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.&lt;/p&gt;
+&lt;p&gt;O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;o-que-é-etl&#34;&gt;O que é ETL?&lt;/h1&gt;
+&lt;p&gt;ETL representa três etapas fundamentais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extract (Extração)&lt;/li&gt;
+&lt;li&gt;Transform (Transformação)&lt;/li&gt;
+&lt;li&gt;Load (Carga)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Otimizador de Sistema (C#)</title>
@@ -105,6 +259,18 @@
 &lt;li&gt;Email: &lt;a href=&#34;mailto:isaacmacielbe@gmail.com&#34;&gt;isaacmacielbe@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&#34;&gt;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Currículo</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>&lt;h1 id=&#34;isaac-maciel&#34;&gt;Isaac Maciel&lt;/h1&gt;
+&lt;h2 id=&#34;formação&#34;&gt;Formação&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Análise e Desenvolvimento de Sistemas&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+&lt;p&gt;📄 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/cv/Isaac-Maciel-Curriculo.pdf&#34;&gt;Baixar currículo em PDF&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sobre mim</title>

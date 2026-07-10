@@ -2,19 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/api/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/api-rest-sistemas-corporativos/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/automacao-python/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/backend/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/backend/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bi/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/business-intelligence/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/primeiro-post/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/serv/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/dados/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dados/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dashboard/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/dashboards/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/dashboard/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/docker/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/modelage/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/engenharia-de-dados/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/etl/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/etl-pratica/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/otimizador-csharp/</loc>
@@ -23,10 +86,16 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/power-bi/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rest/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
@@ -35,18 +104,30 @@
     <loc>http://localhost:1313/tags/seguran%C3%A7a/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/servidor/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/anti-cheat/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/estoque-spring/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/spring-boot/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url>

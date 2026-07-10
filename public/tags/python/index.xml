@@ -25,6 +25,25 @@
 &lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ETL na Prática: Transformando Dados em Informação Estratégica</title>
+      <link>http://localhost:1313/posts/etl-pratica/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/etl-pratica/</guid>
+      <description>&lt;h1 id=&#34;etl-na-prática-transformando-dados-em-informação-estratégica&#34;&gt;ETL na Prática: Transformando Dados em Informação Estratégica&lt;/h1&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.&lt;/p&gt;
+&lt;p&gt;O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;o-que-é-etl&#34;&gt;O que é ETL?&lt;/h1&gt;
+&lt;p&gt;ETL representa três etapas fundamentais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extract (Extração)&lt;/li&gt;
+&lt;li&gt;Transform (Transformação)&lt;/li&gt;
+&lt;li&gt;Load (Carga)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Sistema AntiCheat em Python</title>
       <link>http://localhost:1313/projects/anti-cheat/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
