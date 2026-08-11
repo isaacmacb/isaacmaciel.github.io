@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Maciel | Desenvolvedor</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="/">Isaac Maciel</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <span class="moon">🌙</span>
+                            <span class="sun">☀️</span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="/about/">Sobre</a></li>
+                    <li><a href="/projects/">Projetos</a></li>
+                    <li><a href="/posts/">Artigos</a></li>
+                    <li><a href="/cv/">CV</a></li>
+                    <li><a href="/contact/">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="avatar-wrapper">
+                    <img src="/images/perfil.png" alt="Isaac Maciel">
+                </div>
+
+                <h1>Isaac Maciel</h1>
+                <span class="badge">🚀 Desenvolvedor Back-end</span>
+
+                <p class="subtitle">
+                    Desenvolvedor focado em <strong>Backend</strong> e <strong>Desktop</strong>
+                </p>
+
+                <div class="stack">
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-tag">Java</span>
+                    <span class="stack-tag">Spring Boot</span>
+                    <span class="stack-tag">C#</span>
+                    <span class="stack-tag">SQL</span>
+                    <span class="stack-tag">Power BI</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="buttons">
+                    <a href="/projects/" class="btn btn-primary">📂 Projetos</a>
+                    <a href="/posts/" class="btn btn-secondary">✍️ Artigos</a>
+                    <a href="https://github.com/" target="_blank" class="btn btn-secondary">🐙 GitHub</a>
+                </div>
+
+                <div class="socials">
+                    <a href="https://wa.me/85994084279" target="_blank">💬 WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/isaac-maciel-044a14321/" target="_blank">🔗 LinkedIn</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2026 <a href="/">Isaac Maciel</a></span>
+            <span>Desenvolvido com ❤️</span>
+        </footer>
+    </div>
+
+    <a href="#" id="top-link" class="top-link" aria-label="Voltar ao topo">↑</a>
+
+    <script src="/js/main.js"></script>
+    <script>
+        // Aplica o tema salvo
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+        } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+</body>
+</html>

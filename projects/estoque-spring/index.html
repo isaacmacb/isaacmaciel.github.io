@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque | Isaac Maciel</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="/">Isaac Maciel</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <span class="moon">🌙</span>
+                            <span class="sun">☀️</span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="/about/">Sobre</a></li>
+                    <li><a href="/projects/" class="active">Projetos</a></li>
+                    <li><a href="/posts/">Artigos</a></li>
+                    <li><a href="/cv/">CV</a></li>
+                    <li><a href="/contact/">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="post-single">
+                <header class="page-header">
+                    <h1>📦 Sistema de Estoque (Spring Boot)</h1>
+                    <div class="post-meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="category">🚀 Backend</span>
+                        <span class="status-badge"><span class="dot"></span> Em desenvolvimento</span>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <div class="section">
+                        <h2><span class="emoji">📦</span> Visão Geral</h2>
+                        <p>Sistema <strong>backend para gerenciamento e controle de estoque</strong>, desenvolvido com foco na organização de produtos, controle de informações e construção de uma arquitetura preparada para evolução.</p>
+                        <p>O projeto está em desenvolvimento e busca aplicar <strong>boas práticas de desenvolvimento backend</strong>, organização de código e persistência de dados.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">⚙️</span> Funcionalidades</h2>
+                        <ul>
+                            <li>Cadastro, consulta, atualização e exclusão de produtos (<strong>CRUD</strong>)</li>
+                            <li>Gerenciamento e organização das informações de estoque</li>
+                            <li>Estrutura preparada para expansão de funcionalidades</li>
+                            <li>Separação de responsabilidades entre as camadas da aplicação</li>
+                            <li>Persistência e gerenciamento de dados</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🏗️</span> Arquitetura</h2>
+                        <ul>
+                            <li><strong>Controller</strong> — endpoints da API REST</li>
+                            <li><strong>Service</strong> — regras de negócio e lógica da aplicação</li>
+                            <li><strong>Repository</strong> — acesso e persistência de dados</li>
+                            <li><strong>DTO</strong> — transferência de dados entre camadas</li>
+                            <li><strong>Entity</strong> — mapeamento objeto-relacional</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🧠</span> Tecnologias</h2>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JPA</span>
+                            <span class="tech-tag">Hibernate</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Maven</span>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">📌</span> Resultado Esperado</h2>
+                        <p>Uma aplicação backend <strong>organizada, escalável e de fácil manutenção</strong>, servindo como base para futuras funcionalidades como movimentação de estoque, gerenciamento de categorias, controle de usuários e relatórios.</p>
+                    </div>
+
+                    <a href="/projects/" class="back-link">← Voltar para projetos</a>
+                </div>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2026 <a href="/">Isaac Maciel</a></span>
+            <span>Desenvolvido com ❤️</span>
+        </footer>
+    </div>
+
+    <a href="#" id="top-link" class="top-link" aria-label="Voltar ao topo">↑</a>
+
+    <script src="/js/main.js"></script>
+    <script>
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+        } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+</body>
+</html>
