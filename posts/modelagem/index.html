@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelagem de Dados | Isaac Maciel</title>
+    <title>Modelagem de Banco de Dados para Alta Performance | Isaac Maciel</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -36,34 +36,69 @@
                     <div class="post-meta">
                         <span class="date">📅 6 de julho de 2026</span>
                         <span class="category">🗄️ Banco de Dados</span>
-                        <span class="read-time">⏱️ 3 min de leitura</span>
+                        <span class="read-time">⏱️ 5 min de leitura</span>
                     </div>
                 </header>
 
                 <div class="post-content">
                     <div class="section">
-                        <h2><span class="emoji">🔍</span> Visão Geral</h2>
-                        <p>Uma <strong>modelagem eficiente</strong> é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.</p>
+                        <h2><span class="emoji">🔍</span> Introdução</h2>
+                        <p>A <strong>modelagem de dados</strong> é uma das etapas mais críticas no desenvolvimento de sistemas. Uma modelagem eficiente é fundamental para garantir <strong>desempenho, integridade e escalabilidade</strong> em sistemas corporativos.</p>
+                        <p>Uma base de dados bem projetada pode significar a diferença entre um sistema que suporta o crescimento da empresa e um que se torna um gargalo conforme os dados aumentam.</p>
                     </div>
 
                     <div class="section">
                         <h2><span class="emoji">📐</span> Conceitos Fundamentais</h2>
-                        <p>Os modelos geralmente são divididos em:</p>
+                        <p>A modelagem de dados é dividida em três níveis principais:</p>
                         <ul>
-                            <li><strong>Conceitual</strong> — visão de alto nível</li>
-                            <li><strong>Lógico</strong> — estrutura de dados</li>
-                            <li><strong>Físico</strong> — implementação no banco</li>
+                            <li><strong>Modelo Conceitual:</strong> Visão de alto nível que representa as entidades e seus relacionamentos, focada nas necessidades do negócio. Independente de tecnologia.</li>
+                            <li><strong>Modelo Lógico:</strong> Estrutura detalhada com atributos, chaves e relacionamentos específicos. Define a estrutura sem considerar a implementação física.</li>
+                            <li><strong>Modelo Físico:</strong> Implementação prática do banco de dados, considerando otimizações, índices, particionamento e características do SGBD.</li>
                         </ul>
                     </div>
 
                     <div class="section">
-                        <h2><span class="emoji">📌</span> Otimização</h2>
-                        <p>Algumas práticas importantes:</p>
+                        <h2><span class="emoji">🔑</span> Chaves e Relacionamentos</h2>
+                        <p>Elementos fundamentais da modelagem:</p>
                         <ul>
-                            <li>Criar índices adequados</li>
-                            <li>Evitar SELECT *</li>
-                            <li>Utilizar filtros eficientes</li>
-                            <li>Monitorar consultas lentas</li>
+                            <li><strong>Chave Primária (PK):</strong> Identificador único de cada registro na tabela</li>
+                            <li><strong>Chave Estrangeira (FK):</strong> Referência a uma chave primária de outra tabela</li>
+                            <li><strong>Relacionamentos:</strong> 1:1 (um para um), 1:N (um para muitos), N:N (muitos para muitos)</li>
+                            <li><strong>Índices:</strong> Estruturas que aceleram consultas, mas devem ser usados com cuidado</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">📊</span> Normalização</h2>
+                        <p>A normalização é o processo de organizar dados para reduzir redundância e melhorar a integridade. As principais formas normais são:</p>
+                        <ul>
+                            <li><strong>1FN (Primeira Forma Normal):</strong> Atributos atômicos, sem grupos repetitivos</li>
+                            <li><strong>2FN (Segunda Forma Normal):</strong> 1FN + todos os atributos dependem da chave primária completa</li>
+                            <li><strong>3FN (Terceira Forma Normal):</strong> 2FN + sem dependências transitivas</li>
+                            <li><strong>BCNF (Boyce-Codd):</strong> Versão mais rigorosa da 3FN</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">⚡</span> Otimização de Performance</h2>
+                        <p>Práticas essenciais para garantir alta performance:</p>
+                        <ul>
+                            <li><strong>Índices estratégicos:</strong> Criar índices nas colunas mais utilizadas em consultas WHERE e JOIN</li>
+                            <li><strong>Evitar SELECT *:</strong> Selecionar apenas as colunas necessárias</li>
+                            <li><strong>Filtros eficientes:</strong> Utilizar condições que aproveitem índices</li>
+                            <li><strong>Monitoramento:</strong> Analisar consultas lentas e otimizar conforme necessário</li>
+                            <li><strong>Particionamento:</strong> Dividir tabelas grandes em partes menores para melhor performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">📌</span> Benefícios de uma Boa Modelagem</h2>
+                        <ul>
+                            <li>✅ Melhor desempenho de consultas</li>
+                            <li>✅ Menor redundância de dados</li>
+                            <li>✅ Maior integridade referencial</li>
+                            <li>✅ Facilidade de manutenção e evolução</li>
+                            <li>✅ Escalabilidade para grandes volumes de dados</li>
                         </ul>
                     </div>
 
@@ -73,8 +108,16 @@
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Oracle</span>
                             <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redis</span>
                         </div>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🏁</span> Conclusão</h2>
+                        <p>Investir em modelagem de dados é investir na <strong>fundamentação do sistema</strong>. Uma base de dados bem projetada reduz custos de manutenção, melhora a performance e prepara o sistema para crescimento sustentável.</p>
+                        <p>No mundo atual, onde dados são o novo petróleo, uma modelagem eficiente é <strong>essencial para o sucesso</strong> de qualquer projeto de software.</p>
                     </div>
 
                     <a href="/posts/" class="back-link">← Voltar para artigos</a>

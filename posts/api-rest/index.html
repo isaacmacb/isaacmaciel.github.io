@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitetura de APIs REST | Isaac Maciel</title>
+    <title>Arquitetura de APIs REST para Sistemas Corporativos | Isaac Maciel</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -36,37 +36,65 @@
                     <div class="post-meta">
                         <span class="date">📅 6 de julho de 2026</span>
                         <span class="category">🚀 Backend</span>
-                        <span class="read-time">⏱️ 3 min de leitura</span>
+                        <span class="read-time">⏱️ 5 min de leitura</span>
                     </div>
                 </header>
 
                 <div class="post-content">
                     <div class="section">
-                        <h2><span class="emoji">🔍</span> Visão Geral</h2>
-                        <p>As <strong>APIs REST</strong> tornaram-se o principal mecanismo de integração entre aplicações modernas. Uma arquitetura bem planejada contribui para a <strong>escalabilidade, manutenção e segurança</strong> dos sistemas.</p>
+                        <h2><span class="emoji">🔍</span> Introdução</h2>
+                        <p>As <strong>APIs REST</strong> são o principal mecanismo de integração entre aplicações modernas. Empresas de todos os portes utilizam APIs para conectar sistemas, compartilhar dados e criar ecossistemas digitais integrados.</p>
+                        <p>Uma arquitetura bem planejada contribui para a <strong>escalabilidade, manutenção e segurança</strong> dos sistemas, sendo um diferencial competitivo em projetos corporativos.</p>
+                        <div class="highlight-box">
+                            <p>💡 <strong>Estatística:</strong> Mais de <strong>90% das aplicações web modernas</strong> utilizam APIs REST para comunicação entre serviços.</p>
+                        </div>
                     </div>
 
                     <div class="section">
                         <h2><span class="emoji">⚙️</span> O que é uma API REST?</h2>
-                        <p>Uma API REST permite que aplicações troquem informações através do protocolo HTTP.</p>
-                        <p><strong>Principais métodos:</strong></p>
+                        <p>REST (Representational State Transfer) é um estilo arquitetural que define um conjunto de restrições para criação de serviços web. Uma API REST permite que aplicações troquem informações através do protocolo HTTP utilizando operações bem definidas.</p>
+                        <p><strong>Principais métodos HTTP:</strong></p>
                         <ul>
-                            <li><strong>GET</strong> — consultar dados</li>
-                            <li><strong>POST</strong> — criar novos dados</li>
-                            <li><strong>PUT</strong> — atualizar dados existentes</li>
-                            <li><strong>DELETE</strong> — remover dados</li>
+                            <li><strong>GET:</strong> Consulta e recuperação de recursos</li>
+                            <li><strong>POST:</strong> Criação de novos recursos</li>
+                            <li><strong>PUT:</strong> Atualização completa de recursos existentes</li>
+                            <li><strong>PATCH:</strong> Atualização parcial de recursos</li>
+                            <li><strong>DELETE:</strong> Remoção de recursos</li>
                         </ul>
                     </div>
 
                     <div class="section">
-                        <h2><span class="emoji">🏗️</span> Estrutura Recomendada</h2>
-                        <p>Uma arquitetura backend geralmente é composta por:</p>
+                        <h2><span class="emoji">🏗️</span> Estrutura de uma API REST</h2>
+                        <p>Uma arquitetura backend robusta geralmente é composta pelas seguintes camadas:</p>
                         <ul>
-                            <li><strong>Controller</strong> — endpoints da API</li>
-                            <li><strong>Service</strong> — regras de negócio</li>
-                            <li><strong>Repository</strong> — acesso a dados</li>
-                            <li><strong>DTO</strong> — transferência de dados</li>
-                            <li><strong>Entity</strong> — modelo de dados</li>
+                            <li><strong>Controller Layer:</strong> Responsável por receber requisições HTTP e retornar respostas. Gerencia validações iniciais e formatação de dados.</li>
+                            <li><strong>Service Layer:</strong> Contém as regras de negócio e a lógica principal da aplicação. Coordena operações entre diferentes módulos.</li>
+                            <li><strong>Repository Layer:</strong> Responsável pelo acesso e persistência de dados. Implementa operações de banco de dados.</li>
+                            <li><strong>DTO (Data Transfer Object):</strong> Objetos que transportam dados entre camadas, evitando exposição direta das entidades.</li>
+                            <li><strong>Entity:</strong> Representação das tabelas do banco de dados no código.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🔒</span> Segurança em APIs REST</h2>
+                        <p>A segurança é um aspecto crítico em APIs corporativas. As principais práticas incluem:</p>
+                        <ul>
+                            <li><strong>Autenticação JWT:</strong> Tokens seguros para controle de acesso</li>
+                            <li><strong>HTTPS:</strong> Comunicação criptografada</li>
+                            <li><strong>Rate Limiting:</strong> Proteção contra ataques de força bruta</li>
+                            <li><strong>Validação de entrada:</strong> Prevenção contra SQL Injection e XSS</li>
+                            <li><strong>CORS:</strong> Controle de origens permitidas</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🚀</span> Boas Práticas</h2>
+                        <ul>
+                            <li><strong>Versionamento:</strong> Use versionamento na URL (ex: /api/v1/)</li>
+                            <li><strong>Nomenclatura consistente:</strong> Recursos no plural e em inglês</li>
+                            <li><strong>Status Codes adequados:</strong> Utilize códigos HTTP corretamente</li>
+                            <li><strong>Documentação:</strong> Swagger/OpenAPI para facilitar integrações</li>
+                            <li><strong>Performance:</strong> Paginação, filtros e cache para otimização</li>
                         </ul>
                     </div>
 
@@ -78,7 +106,15 @@
                             <span class="tech-tag">JPA</span>
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">Swagger</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Docker</span>
                         </div>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🏁</span> Conclusão</h2>
+                        <p>Uma API REST bem arquitetada é fundamental para sistemas corporativos modernos. Ela garante <strong>integração eficiente</strong> entre serviços, facilita a manutenção e proporciona uma experiência consistente para desenvolvedores e usuários finais.</p>
+                        <p>Investir em boas práticas de API design é investir na <strong>escalabilidade e longevidade</strong> do seu sistema.</p>
                     </div>
 
                     <a href="/posts/" class="back-link">← Voltar para artigos</a>

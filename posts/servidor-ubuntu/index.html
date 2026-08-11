@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servidor Ubuntu | Isaac Maciel</title>
+    <title>Servidor Ubuntu com Notebook Antigo | Isaac Maciel</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -36,30 +36,76 @@
                     <div class="post-meta">
                         <span class="date">📅 6 de julho de 2026</span>
                         <span class="category">🐧 Linux</span>
-                        <span class="read-time">⏱️ 3 min de leitura</span>
+                        <span class="read-time">⏱️ 5 min de leitura</span>
                     </div>
                 </header>
 
                 <div class="post-content">
                     <div class="section">
-                        <h2><span class="emoji">🔍</span> Visão Geral</h2>
-                        <p>Neste artigo compartilho como <strong>reaproveitei um notebook antigo</strong> para criar um servidor utilizando Ubuntu Server.</p>
-                        <p>O objetivo era criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.</p>
+                        <h2><span class="emoji">🔍</span> Introdução</h2>
+                        <p>Reaproveitar hardware antigo é uma prática sustentável que também pode ser extremamente <strong>educativa e econômica</strong>. Neste artigo, compartilho como transformei um notebook antigo em um <strong>servidor Ubuntu Server</strong>, criando um ambiente de estudos e hospedagem para projetos pessoais.</p>
+                        <p>Esta experiência demonstra como é possível construir uma <strong>infraestrutura de baixo custo</strong> para aprendizado e desenvolvimento de projetos reais.</p>
                     </div>
 
                     <div class="section">
-                        <h2><span class="emoji">💻</span> Hardware utilizado</h2>
+                        <h2><span class="emoji">💻</span> Hardware Utilizado</h2>
                         <ul>
-                            <li>Notebook antigo</li>
-                            <li>SSD para melhorar o desempenho</li>
-                            <li>Conexão de rede cabeada</li>
+                            <li><strong>Notebook:</strong> Modelo antigo com processador Intel Core i3 de 2ª geração</li>
+                            <li><strong>Armazenamento:</strong> SSD de 120GB (upgrade essencial para performance)</li>
+                            <li><strong>Memória:</strong> 8GB RAM (expandida para melhor desempenho)</li>
+                            <li><strong>Rede:</strong> Conexão cabeada para estabilidade</li>
+                            <li><strong>Alimentação:</strong> Fonte original com no-break</li>
                         </ul>
-                        <p>Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.</p>
+                        <p>Mesmo sendo um equipamento modesto, foi perfeitamente suficiente para executar diversos serviços e aplicações.</p>
                     </div>
 
                     <div class="section">
-                        <h2><span class="emoji">📌</span> Instalação do Ubuntu Server</h2>
-                        <p>O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável. A instalação foi feita em modo texto, garantindo um sistema leve e otimizado.</p>
+                        <h2><span class="emoji">📥</span> Instalação do Ubuntu Server</h2>
+                        <p>O processo de instalação foi realizado nas seguintes etapas:</p>
+                        <ul>
+                            <li><strong>Download da ISO:</strong> Baixei a versão LTS do Ubuntu Server (24.04)</li>
+                            <li><strong>Pendrive Bootável:</strong> Criei com Rufus, garantindo compatibilidade com o hardware antigo</li>
+                            <li><strong>Instalação Minimal:</strong> Optei pela instalação minimal, mantendo apenas o essencial para um servidor</li>
+                            <li><strong>Configuração de Rede:</strong> IP fixo para facilitar o acesso remoto</li>
+                            <li><strong>SSH:</strong> Habilitado para administração remota</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🔧</span> Serviços Instalados</h2>
+                        <p>Após a instalação base, configurei diversos serviços:</p>
+                        <ul>
+                            <li><strong>Docker:</strong> Para containerização de aplicações</li>
+                            <li><strong>Portainer:</strong> Interface gráfica para gerenciamento de containers</li>
+                            <li><strong>Nginx:</strong> Servidor web e proxy reverso</li>
+                            <li><strong>PostgreSQL:</strong> Banco de dados relacional</li>
+                            <li><strong>Node.js:</strong> Ambiente para aplicações JavaScript</li>
+                            <li><strong>Uptime Kuma:</strong> Monitoramento de serviços</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🛡️</span> Segurança e Manutenção</h2>
+                        <p>Algumas práticas importantes que adotei:</p>
+                        <ul>
+                            <li><strong>Firewall:</strong> Configuração do UFW (Uncomplicated Firewall)</li>
+                            <li><strong>SSH Key:</strong> Acesso seguro sem senha</li>
+                            <li><strong>Fail2ban:</strong> Proteção contra ataques de força bruta</li>
+                            <li><strong>Atualizações:</strong> Script automático para atualizações de segurança</li>
+                            <li><strong>Backup:</strong> Rotinas diárias de backup para o Dropbox</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">📌</span> Aprendizados e Benefícios</h2>
+                        <ul>
+                            <li>✅ Reaproveitamento de hardware que seria descartado</li>
+                            <li>✅ Ambiente de aprendizado prático em Linux</li>
+                            <li>✅ Hospedagem de projetos pessoais e portfólio</li>
+                            <li>✅ Experiência em administração de servidores</li>
+                            <li>✅ Custo zero para hospedagem</li>
+                            <li>✅ Controle total do ambiente</li>
+                        </ul>
                     </div>
 
                     <div class="section">
@@ -69,7 +115,16 @@
                             <span class="tech-tag">Linux</span>
                             <span class="tech-tag">SSH</span>
                             <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Portainer</span>
                         </div>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🏁</span> Conclusão</h2>
+                        <p>Transformar um notebook antigo em servidor foi uma das experiências mais <strong>enriquecedoras</strong> da minha jornada como desenvolvedor. Demonstra que com <strong>conhecimento técnico e criatividade</strong>, é possível construir soluções úteis com recursos limitados.</p>
+                        <p>Este projeto me proporcionou um <strong>laboratório de aprendizado</strong> que continua sendo uma ferramenta valiosa para testes e desenvolvimento de novas habilidades.</p>
                     </div>
 
                     <a href="/posts/" class="back-link">← Voltar para artigos</a>
