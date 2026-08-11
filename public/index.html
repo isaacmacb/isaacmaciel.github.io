@@ -1,487 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Maciel | Desenvolvedor</title>
-  
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+	<meta name="generator" content="Hugo 0.149.1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Maciel</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: #0d1117;
-            color: #e6edf3;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            transition: background-color 0.4s ease, color 0.4s ease;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
 
-        .container {
-            max-width: 700px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 24px;
-            padding: 2.5rem 2rem;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
-            animation: slideUp 0.6s ease-out;
-            transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-        }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    .avatar-wrapper {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      padding: 6px;
+      background: linear-gradient(135deg, #ff3b3b, #a100ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px rgba(255, 59, 59, 0.3);
+    }
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
+    .avatar-wrapper img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-        /* THEME TOGGLE */
-        .theme-toggle-wrapper {
-            position: absolute;
-            top: -0.5rem;
-            right: -0.5rem;
-        }
+    h1 {
+      margin-top: 20px;
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
 
-        .theme-toggle {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #e6edf3;
-        }
+    p.subtitle {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-top: 10px;
+    }
 
-        .theme-toggle:hover {
-            border-color: #58a6ff;
-            transform: rotate(20deg);
-            background: rgba(88, 166, 255, 0.1);
-        }
+    .stack {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      opacity: 0.7;
+    }
 
-        .theme-toggle .moon,
-        .theme-toggle .sun {
-            display: none;
-        }
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        [data-theme="dark"] .theme-toggle .moon {
-            display: block;
-        }
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-        [data-theme="dark"] .theme-toggle .sun {
-            display: none;
-        }
+    .btn-primary {
+      background: #ff3b3b;
+      color: white;
+    }
 
-        [data-theme="light"] .theme-toggle .sun {
-            display: block;
-        }
+    .btn-primary:hover {
+      background: #ff1f1f;
+    }
 
-        [data-theme="light"] .theme-toggle .moon {
-            display: none;
-        }
+    .btn-secondary {
+      border: 1px solid #444;
+      color: white;
+    }
 
-        .avatar-wrapper {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            padding: 4px;
-            background: linear-gradient(135deg, #58a6ff, #a100ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 30px rgba(88, 166, 255, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+    .btn-secondary:hover {
+      border-color: #ff3b3b;
+    }
 
-        .avatar-wrapper:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(88, 166, 255, 0.3);
-        }
+     
+    .socials {
+      margin-top: 25px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        .avatar-wrapper img {
-            width: 122px;
-            height: 122px;
-            border-radius: 50%;
-            object-fit: cover;
-            background: #0d1117;
-        }
+    .socials a {
+      padding: 8px 14px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
 
-        h1 {
-            margin-top: 1.2rem;
-            font-size: 2.4rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            background: linear-gradient(135deg, #f0f6fc, #8b949e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: background 0.4s ease;
-        }
+    .socials a:hover {
+      border-color: #ff3b3b;
+      transform: translateY(-2px);
+    }
 
-        .badge {
-            margin-top: 0.4rem;
-            background: rgba(88, 166, 255, 0.15);
-            border: 1px solid rgba(88, 166, 255, 0.2);
-            padding: 0.2rem 1rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #58a6ff;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
-        }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        .subtitle {
-            margin-top: 0.8rem;
-            font-size: 1rem;
-            color: #8b949e;
-            max-width: 450px;
-            line-height: 1.5;
-            transition: color 0.3s ease;
-        }
-
-        .subtitle strong {
-            color: #f0f6fc;
-            transition: color 0.3s ease;
-        }
-
-        .stack {
-            margin-top: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-
-        .stack-tag {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 0.2rem 0.8rem;
-            border-radius: 50px;
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: #8b949e;
-            transition: all 0.3s;
-        }
-
-        .stack-tag:hover {
-            background: rgba(88, 166, 255, 0.1);
-            border-color: rgba(88, 166, 255, 0.3);
-            color: #58a6ff;
-        }
-
-        .divider {
-            width: 40px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(88, 166, 255, 0.3), transparent);
-            margin: 1rem auto;
-            transition: background 0.3s ease;
-        }
-
-        .buttons {
-            margin-top: 1.5rem;
-            display: flex;
-            gap: 0.8rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .btn {
-            padding: 0.6rem 1.6rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #58a6ff, #3d7fd9);
-            color: white;
-            box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(88, 166, 255, 0.4);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            color: #e6edf3;
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(88, 166, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .socials {
-            margin-top: 0.5rem;
-            display: flex;
-            gap: 0.8rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .socials a {
-            padding: 0.4rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 8px;
-            text-decoration: none;
-            color: #8b949e;
-            font-size: 0.85rem;
-            transition: all 0.3s;
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        .socials a:hover {
-            border-color: rgba(88, 166, 255, 0.3);
-            color: #58a6ff;
-            background: rgba(88, 166, 255, 0.05);
-            transform: translateY(-2px);
-        }
-
-        /* ========================================== */
-        /* TEMA CLARO (LIGHT) */
-        /* ========================================== */
-        [data-theme="light"] body {
-            background: #f6f8fa;
-            color: #1f2328;
-        }
-
-        [data-theme="light"] .container {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
-        }
-
-        [data-theme="light"] h1 {
-            background: linear-gradient(135deg, #1f2328, #57606a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        [data-theme="light"] .badge {
-            background: rgba(9, 105, 218, 0.1);
-            border-color: rgba(9, 105, 218, 0.2);
-            color: #0969da;
-        }
-
-        [data-theme="light"] .subtitle {
-            color: #57606a;
-        }
-
-        [data-theme="light"] .subtitle strong {
-            color: #1f2328;
-        }
-
-        [data-theme="light"] .stack-tag {
-            background: rgba(0, 0, 0, 0.03);
-            border-color: rgba(0, 0, 0, 0.06);
-            color: #57606a;
-        }
-
-        [data-theme="light"] .stack-tag:hover {
-            background: rgba(9, 105, 218, 0.08);
-            border-color: rgba(9, 105, 218, 0.2);
-            color: #0969da;
-        }
-
-        [data-theme="light"] .divider {
-            background: linear-gradient(90deg, transparent, rgba(9, 105, 218, 0.2), transparent);
-        }
-
-        [data-theme="light"] .btn-secondary {
-            background: rgba(0, 0, 0, 0.03);
-            border-color: rgba(0, 0, 0, 0.08);
-            color: #1f2328;
-        }
-
-        [data-theme="light"] .btn-secondary:hover {
-            background: rgba(0, 0, 0, 0.06);
-            border-color: rgba(9, 105, 218, 0.3);
-        }
-
-        [data-theme="light"] .btn-primary {
-            background: linear-gradient(135deg, #0969da, #0550ae);
-            box-shadow: 0 4px 15px rgba(9, 105, 218, 0.3);
-        }
-
-        [data-theme="light"] .btn-primary:hover {
-            box-shadow: 0 6px 25px rgba(9, 105, 218, 0.4);
-        }
-
-        [data-theme="light"] .socials a {
-            border-color: rgba(0, 0, 0, 0.06);
-            color: #57606a;
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        [data-theme="light"] .socials a:hover {
-            border-color: rgba(9, 105, 218, 0.3);
-            color: #0969da;
-            background: rgba(9, 105, 218, 0.05);
-        }
-
-        [data-theme="light"] .theme-toggle {
-            background: rgba(0, 0, 0, 0.03);
-            border-color: rgba(0, 0, 0, 0.08);
-            color: #1f2328;
-        }
-
-        [data-theme="light"] .theme-toggle:hover {
-            border-color: #0969da;
-            background: rgba(9, 105, 218, 0.05);
-        }
-
-        [data-theme="light"] .avatar-wrapper {
-            background: linear-gradient(135deg, #0969da, #a100ff);
-            box-shadow: 0 0 30px rgba(9, 105, 218, 0.2);
-        }
-
-        [data-theme="light"] .avatar-wrapper:hover {
-            box-shadow: 0 0 40px rgba(9, 105, 218, 0.3);
-        }
-
-        [data-theme="light"] .avatar-wrapper img {
-            background: #f6f8fa;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .container { padding: 2rem 1.5rem; }
-            h1 { font-size: 2rem; }
-            .avatar-wrapper { width: 110px; height: 110px; }
-            .avatar-wrapper img { width: 102px; height: 102px; }
-            .theme-toggle-wrapper { top: 0; right: 0; }
-        }
-
-        @media (max-width: 480px) {
-            .container { padding: 1.5rem 1rem; }
-            h1 { font-size: 1.6rem; }
-            .buttons { flex-direction: column; width: 100%; }
-            .btn { width: 100%; justify-content: center; }
-            .theme-toggle-wrapper { top: 0.2rem; right: 0.2rem; }
-            .theme-toggle { width: 34px; height: 34px; font-size: 1rem; }
-        }
-    </style>
-
-    <script>
-        // Verifica e aplica o tema salvo
-        if (localStorage.getItem("pref-theme") === "light") {
-            document.documentElement.setAttribute("data-theme", "light");
-        } else {
-            document.documentElement.setAttribute("data-theme", "dark");
-        }
-    </script>
+  </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <section class="hero">
+  <section class="hero">
 
-            <!-- Toggle de Tema -->
-            <div class="theme-toggle-wrapper">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
-                    <span class="moon">🌙</span>
-                    <span class="sun">☀️</span>
-                </button>
-            </div>
-
-            <div class="avatar-wrapper">
-                <img src="/images/perfil.png" alt="Isaac Maciel">
-            </div>
-
-            <h1>Isaac Maciel</h1>
-            <span class="badge">🚀 Desenvolvedor Back-end</span>
-
-            <p class="subtitle">
-                Desenvolvedor focado em <strong>Backend</strong> e <strong>Desktop</strong>
-            </p>
-
-            <div class="stack">
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">Java</span>
-                <span class="stack-tag">Spring Boot</span>
-                <span class="stack-tag">C#</span>
-                <span class="stack-tag">SQL</span>
-                <span class="stack-tag">Power BI</span>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="buttons">
-                <a href="/projects" class="btn btn-primary">📂 Projetos</a>
-                <a href="/posts" class="btn btn-secondary">✍️ Artigos</a>
-                <a href="https://github.com/" target="_blank" class="btn btn-secondary">🐙 GitHub</a>
-            </div>
-
-            <div class="socials">
-                <a href="https://wa.me/85994084279" target="_blank">💬 WhatsApp</a>
-                <a href="https://www.linkedin.com/in/isaac-maciel-044a14321/" target="_blank">🔗 LinkedIn</a>
-            </div>
-
-        </section>
+    
+    <div class="avatar-wrapper">
+      <img src="/images/perfil.png" alt="Foto de Perfil">
     </div>
 
-    <script>
-        // ============================================
-        // THEME TOGGLE
-        // ============================================
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
+    
+    <h1>Isaac Maciel</h1>
 
-        function toggleTheme() {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('pref-theme', newTheme);
-        }
+    
+    <p class="subtitle">
+      Desenvolvedor de sistemas
+    </p>
 
-        themeToggle?.addEventListener('click', toggleTheme);
+    
+    <div class="stack">
+    </div>
 
-        // ============================================
-        // KEYBOARD SHORTCUT (Alt + T)
-        // ============================================
-        document.addEventListener('keydown', (e) => {
-            if (e.altKey && e.key === 't') {
-                e.preventDefault();
-                toggleTheme();
-            }
-        });
-    </script>
+    
+    <div class="buttons">
+      <a href="/projects" class="btn btn-primary">Ver Projetos</a>
+      <a href="/posts" class="btn btn-secondary">Artigos</a>
+      <a href="https://github.com/" class="btn btn-secondary">GitHub</a>
+    </div>
+
+    
+   <div class="socials">
+  <a href="https://wa.me/85994084279" target="_blank">📱 WhatsApp</a>
+  <a href="https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false" target="_blank">🔗 LinkedIn</a>
+</div>
+
+  </section>
 
 </body>
 </html>

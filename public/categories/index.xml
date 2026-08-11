@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Isaac Maciel</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://isaacspace.netlify.app/categories/</link>
     <description>Recent content in Categories on Isaac Maciel</description>
     <generator>Hugo</generator>
     <language>pt-br</language>
     <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://isaacspace.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend</title>
-      <link>http://localhost:1313/categories/backend/</link>
+      <link>https://isaacspace.netlify.app/categories/backend/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/backend/</guid>
+      <guid>https://isaacspace.netlify.app/categories/backend/</guid>
       <description></description>
     </item>
     <item>
       <title>Business Intelligence</title>
-      <link>http://localhost:1313/categories/business-intelligence/</link>
+      <link>https://isaacspace.netlify.app/categories/business-intelligence/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/business-intelligence/</guid>
+      <guid>https://isaacspace.netlify.app/categories/business-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Dados</title>
-      <link>http://localhost:1313/categories/dados/</link>
+      <link>https://isaacspace.netlify.app/categories/dados/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/dados/</guid>
+      <guid>https://isaacspace.netlify.app/categories/dados/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,121 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/api/</loc>
+    <loc>https://isaacspace.netlify.app/projects/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/api-rest-sistemas-corporativos/</loc>
+    <loc>https://isaacspace.netlify.app/tags/api/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/backend/</loc>
+    <loc>https://isaacspace.netlify.app/posts/api-rest-sistemas-corporativos/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/backend/</loc>
+    <loc>https://isaacspace.netlify.app/categories/backend/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bi/</loc>
+    <loc>https://isaacspace.netlify.app/tags/backend/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/business-intelligence/</loc>
+    <loc>https://isaacspace.netlify.app/tags/bi/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://isaacspace.netlify.app/categories/business-intelligence/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/primeiro-post/</loc>
+    <loc>https://isaacspace.netlify.app/categories/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/serv/</loc>
+    <loc>https://isaacspace.netlify.app/posts/primeiro-post/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/dados/</loc>
+    <loc>https://isaacspace.netlify.app/posts/serv/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dados/</loc>
+    <loc>https://isaacspace.netlify.app/categories/dados/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dashboard/</loc>
+    <loc>https://isaacspace.netlify.app/tags/dados/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dashboard/</loc>
+    <loc>https://isaacspace.netlify.app/tags/dashboard/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/devops/</loc>
+    <loc>https://isaacspace.netlify.app/posts/dashboard/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://isaacspace.netlify.app/tags/devops/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/</loc>
+    <loc>https://isaacspace.netlify.app/tags/docker/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/modelage/</loc>
+    <loc>https://isaacspace.netlify.app/posts/docker/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/engenharia-de-dados/</loc>
+    <loc>https://isaacspace.netlify.app/posts/modelage/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/etl/</loc>
+    <loc>https://isaacspace.netlify.app/tags/engenharia-de-dados/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/etl-pratica/</loc>
+    <loc>https://isaacspace.netlify.app/tags/etl/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://isaacspace.netlify.app/posts/etl-pratica/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>https://isaacspace.netlify.app/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://isaacspace.netlify.app/tags/java/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://isaacspace.netlify.app/tags/linux/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/power-bi/</loc>
+    <loc>https://isaacspace.netlify.app/posts/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://isaacspace.netlify.app/tags/power-bi/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rest/</loc>
+    <loc>https://isaacspace.netlify.app/tags/python/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/seguran%C3%A7a/</loc>
+    <loc>https://isaacspace.netlify.app/tags/rest/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/servidor/</loc>
+    <loc>https://isaacspace.netlify.app/tags/seguran%C3%A7a/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spring-boot/</loc>
+    <loc>https://isaacspace.netlify.app/tags/servidor/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
+    <loc>https://isaacspace.netlify.app/projects/anti-cheat/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://isaacspace.netlify.app/tags/spring-boot/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ubuntu/</loc>
+    <loc>https://isaacspace.netlify.app/tags/sql/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://isaacspace.netlify.app/tags/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/anti-cheat/</loc>
+    <loc>https://isaacspace.netlify.app/tags/ubuntu/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/automacao-python/</loc>
+    <loc>https://isaacspace.netlify.app/projects/automacao-python/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/dashboards/</loc>
+    <loc>https://isaacspace.netlify.app/projects/dashboards/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/estoque-spring/</loc>
+    <loc>https://isaacspace.netlify.app/projects/estoque-spring/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/otimizador-csharp/</loc>
+    <loc>https://isaacspace.netlify.app/projects/otimizador-csharp/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://isaacspace.netlify.app/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/cv/</loc>
+    <loc>https://isaacspace.netlify.app/cv/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://isaacspace.netlify.app/about/</loc>
   </url>
 </urlset>
