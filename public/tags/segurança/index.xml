@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Segurança on Isaac Maciel</title>
     <link>http://localhost:1313/tags/seguran%C3%A7a/</link>
@@ -13,16 +13,7 @@
       <link>http://localhost:1313/posts/primeiro-post/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/primeiro-post/</guid>
-      <description>&lt;p&gt;Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;o-problema&#34;&gt;O problema&lt;/h2&gt;
-&lt;p&gt;Detectar arquivos maliciosos em ambientes locais.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;a-solução&#34;&gt;A solução&lt;/h2&gt;
-&lt;p&gt;Uso de hash SHA256 + padrões de nome + análise de diretórios.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;aprendizado&#34;&gt;Aprendizado&lt;/h2&gt;
-&lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-problema&#34;&gt;O problema&lt;/h2&gt;&#xA;&lt;p&gt;Detectar arquivos maliciosos em ambientes locais.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;a-solução&#34;&gt;A solução&lt;/h2&gt;&#xA;&lt;p&gt;Uso de hash SHA256 + padrões de nome + análise de diretórios.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;aprendizado&#34;&gt;Aprendizado&lt;/h2&gt;&#xA;&lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

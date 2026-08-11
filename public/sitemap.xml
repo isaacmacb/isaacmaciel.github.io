@@ -8,12 +8,6 @@
     <loc>http://localhost:1313/posts/api-rest-sistemas-corporativos/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/automacao-python/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/backend/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,9 +36,6 @@
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dashboard/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/dashboards/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/dashboard/</loc>
@@ -80,16 +71,10 @@
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/otimizador-csharp/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/power-bi/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
@@ -98,19 +83,10 @@
     <loc>http://localhost:1313/tags/rest/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/seguran%C3%A7a/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/servidor/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/anti-cheat/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/estoque-spring/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/spring-boot/</loc>
@@ -124,6 +100,18 @@
   </url><url>
     <loc>http://localhost:1313/tags/ubuntu/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/anti-cheat/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/automacao-python/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/dashboards/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/estoque-spring/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/otimizador-csharp/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>

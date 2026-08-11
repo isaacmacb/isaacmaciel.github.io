@@ -1,269 +1,878 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="dark">
+<html lang="pt" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Projetos | Isaac Maciel</title>
-<meta name="keywords" content="">
-<meta name="description" content="Aqui estão alguns dos sistemas e ferramentas que desenvolvi ao longo da minha jornada.
-Foco em automação, sistemas backend e soluções orientadas a dados.">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/projects/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/projects/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/">
-<noscript>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Projetos | Isaac Maciel</title>
+    <meta name="description" content="Conheça os sistemas e ferramentas desenvolvidos por Isaac Maciel. Foco em automação, sistemas backend e soluções orientadas a dados.">
+    <link rel="canonical" href="http://localhost:1313/projects/">
+    
     <style>
-        #theme-toggle,
-        .top-link {
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* HEADER / NAV */
+        .header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 1.5rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f0f6fc;
+            letter-spacing: -0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .logo-switches {
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: transparent;
+            border: 1px solid #30363d;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            cursor: pointer;
+            color: #f0f6fc;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .theme-toggle:hover {
+            border-color: #58a6ff;
+            background: rgba(88, 166, 255, 0.1);
+            transform: rotate(15deg);
+        }
+
+        .theme-toggle .moon,
+        .theme-toggle .sun {
             display: none;
         }
 
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="header-nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Isaac Maciel (Alt + H)">Isaac Maciel</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu" class="menu">
-            <li>
-                <a href="http://localhost:1313/about/" title="Sobre">
-                    <span>Sobre</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/projects/" title="Projetos">
-                    <span class="active">Projetos</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/posts/" title="Artigos">
-                    <span>Artigos</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/cv/" title="CV">
-                    <span>CV</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/contact/" title="Contato">
-                    <span>Contato</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Projetos
-  </h1>
-</header>
-<div class="post-content md-content"><p>Aqui estão alguns dos sistemas e ferramentas que desenvolvi ao longo da minha jornada.</p>
-<p>Foco em automação, sistemas backend e soluções orientadas a dados.</p>
-
-
-</div>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Automação de Servidores (Python)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Criação de robôs e scripts em Python para automação de tarefas em servidores.
-Objetivo: reduzir processos manuais e aumentar eficiência operacional.
-</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Automação de Servidores (Python)" href="http://localhost:1313/projects/automacao-python/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Dashboards Empresariais
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Desenvolvimento de dashboards para diferentes áreas de negócio:
-Financeiro Recursos Humanos Marketing Comercial Foco em visualização de dados e suporte à tomada de decisão.
-</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Dashboards Empresariais" href="http://localhost:1313/projects/dashboards/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Otimizador de Sistema (C#)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Projeto em desenvolvimento focado em otimização de desempenho e uso eficiente de recursos do sistema.
-Foco em melhorar performance e reduzir consumo de recursos.
-</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Otimizador de Sistema (C#)" href="http://localhost:1313/projects/otimizador-csharp/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Sistema AntiCheat em Python
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>🔍 Visão geral Sistema de varredura de arquivos suspeitos em computadores.
-⚙️ Funcionalidades Scan de diretórios do sistema Hash SHA256 para validação Detecção de padrões suspeitos Exportação CSV Integração com Discord 🧠 Tecnologias Python psutil hashlib tqdm 📌 Resultado Sistema capaz de analisar milhares de arquivos com performance otimizada.
-</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Sistema AntiCheat em Python" href="http://localhost:1313/projects/anti-cheat/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Sistema de Estoque (Spring Boot)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Sistema backend em construção para controle de estoque.
-CRUD de produtos Organização de dados Estrutura escalável </p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Sistema de Estoque (Spring Boot)" href="http://localhost:1313/projects/estoque-spring/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Isaac Maciel</a></span> · 
-
-    
-    
-    <span>
-        Powered by
-        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
-        <polyline points="17 11 12 6 7 11"></polyline>
-        <polyline points="17 18 12 13 7 18"></polyline>
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
+        [data-theme="dark"] .theme-toggle .moon {
+            display: block;
         }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+        [data-theme="dark"] .theme-toggle .sun {
+            display: none;
+        }
+
+        [data-theme="light"] .theme-toggle .sun {
+            display: block;
+        }
+
+        [data-theme="light"] .theme-toggle .moon {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .menu a {
+            color: #8b949e;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .menu a:hover,
+        .menu .active {
+            color: #f0f6fc;
+            text-decoration: none;
+        }
+
+        .menu .active {
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 5px;
+        }
+
+        /* INTRO */
+        .page-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #30363d;
+            transition: border-color 0.3s ease;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #f0f6fc;
+            letter-spacing: -1px;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .page-header .badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(88, 166, 255, 0.15);
+            color: #58a6ff;
+            padding: 0.2rem 1rem;
+            border-radius: 50px;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #8b949e;
+            max-width: 750px;
+            transition: color 0.3s ease;
+        }
+
+        .intro-text p {
+            margin-bottom: 0.5rem;
+        }
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+        .intro-text strong {
+            color: #f0f6fc;
+            transition: color 0.3s ease;
+        }
+
+        /* FILTER TABS */
+        .filter-tabs {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .filter-tab {
+            padding: 0.4rem 1.2rem;
+            border: 1px solid #30363d;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #8b949e;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-tab:hover {
+            border-color: #58a6ff;
+            color: #f0f6fc;
+        }
+
+        .filter-tab.active {
+            background: rgba(88, 166, 255, 0.12);
+            border-color: #58a6ff;
+            color: #58a6ff;
+        }
+
+        /* PROJECTS GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid #30363d;
+            border-radius: 14px;
+            padding: 1.8rem 1.8rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #58a6ff, #a100ff);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-icon {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #f0f6fc;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.3px;
+            transition: color 0.2s;
+        }
+
+        .project-card:hover .project-title {
+            color: #58a6ff;
+        }
+
+        .project-subtitle {
+            font-size: 0.85rem;
+            color: #8b949e;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-description {
+            color: #b0b8c4;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+
+        .project-description strong {
+            color: #f0f6fc;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 0.2rem 0.7rem;
+            border-radius: 50px;
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            border-color: #58a6ff;
+            color: #f0f6fc;
+        }
+
+        .project-link {
+            background: transparent;
+            border: 1px solid #58a6ff;
+            color: #58a6ff;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            align-self: flex-start;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            background: #58a6ff;
+            color: #0d1117;
+            text-decoration: none;
+            transform: translateX(4px);
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .footer a {
+            color: #8b949e;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #f0f6fc;
+        }
+
+        /* TOP LINK */
+        #top-link {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #30363d;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: #f0f6fc;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+            text-decoration: none;
+            z-index: 999;
+        }
+
+        #top-link:hover {
+            background: rgba(88, 166, 255, 0.15);
+            border-color: #58a6ff;
+            text-decoration: none;
+        }
+
+        #top-link.visible {
+            display: flex;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem 1rem;
             }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
+            .header-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .menu {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+            }
+            .page-header h1 {
+                font-size: 2rem;
+                flex-wrap: wrap;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-card {
+                padding: 1.4rem;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.6rem;
+            }
+            .filter-tabs {
+                gap: 0.5rem;
+            }
+            .filter-tab {
+                padding: 0.3rem 1rem;
+                font-size: 0.75rem;
+            }
+            .logo a {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* ======================================== */
+        /* TEMA CLARO (LIGHT) */
+        /* ======================================== */
+        [data-theme="light"] body {
+            background-color: #f6f8fa;
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .logo a {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .menu a {
+            color: #57606a;
+        }
+
+        [data-theme="light"] .menu a:hover,
+        [data-theme="light"] .menu .active {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .page-header h1 {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .page-header .badge {
+            background: rgba(9, 105, 218, 0.1);
+            color: #0969da;
+            border-color: rgba(9, 105, 218, 0.2);
+        }
+
+        [data-theme="light"] .intro-text {
+            color: #57606a;
+        }
+
+        [data-theme="light"] .intro-text strong {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .project-card {
+            background: #ffffff;
+            border-color: #d0d7de;
+        }
+
+        [data-theme="light"] .project-card:hover {
+            border-color: #0969da;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="light"] .project-title {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .project-card:hover .project-title {
+            color: #0969da;
+        }
+
+        [data-theme="light"] .project-subtitle {
+            color: #57606a;
+        }
+
+        [data-theme="light"] .project-description {
+            color: #57606a;
+        }
+
+        [data-theme="light"] .project-description strong {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .tag {
+            background: #e1e4e8;
+            border-color: #d0d7de;
+            color: #57606a;
+        }
+
+        [data-theme="light"] .tag:hover {
+            border-color: #0969da;
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .project-link {
+            border-color: #0969da;
+            color: #0969da;
+        }
+
+        [data-theme="light"] .project-link:hover {
+            background: #0969da;
+            color: #ffffff;
+        }
+
+        [data-theme="light"] .filter-tab {
+            border-color: #d0d7de;
+            color: #57606a;
+        }
+
+        [data-theme="light"] .filter-tab:hover {
+            border-color: #0969da;
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .filter-tab.active {
+            background: #ddf4ff;
+            border-color: #0969da;
+            color: #0969da;
+        }
+
+        [data-theme="light"] .header {
+            border-bottom-color: #d0d7de;
+        }
+
+        [data-theme="light"] .page-header {
+            border-bottom-color: #d0d7de;
+        }
+
+        [data-theme="light"] .footer {
+            border-top-color: #d0d7de;
+            color: #57606a;
+        }
+
+        [data-theme="light"] .footer a {
+            color: #57606a;
+        }
+        [data-theme="light"] .footer a:hover {
+            color: #1f2328;
+        }
+
+        [data-theme="light"] .theme-toggle {
+            border-color: #d0d7de;
+            color: #1f2328;
+            background: #ffffff;
+        }
+
+        [data-theme="light"] .theme-toggle:hover {
+            border-color: #0969da;
+            background: rgba(9, 105, 218, 0.05);
+        }
+
+        [data-theme="light"] #top-link {
+            background: #ffffff;
+            border-color: #d0d7de;
+            color: #1f2328;
+        }
+
+        [data-theme="light"] #top-link:hover {
+            background: #f0f6fc;
+            border-color: #0969da;
+        }
+    </style>
+
+    <script>
+        // Verifica e aplica o tema salvo
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.querySelector("html").dataset.theme = 'light';
+        } else {
+            document.querySelector("html").dataset.theme = 'dark';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="http://localhost:1313/">Isaac Maciel</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <span class="moon">🌙</span>
+                            <span class="sun">☀️</span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="http://localhost:1313/about/">Sobre</a></li>
+                    <li><a href="http://localhost:1313/projects/" class="active">Projetos</a></li>
+                    <li><a href="http://localhost:1313/posts/">Artigos</a></li>
+                    <li><a href="http://localhost:1313/cv/">CV</a></li>
+                    <li><a href="http://localhost:1313/contact/">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <header class="page-header">
+                <h1>
+                    🚀 Projetos
+                    <span class="badge">5 projetos</span>
+                </h1>
+                <div class="intro-text">
+                    <p>Uma seleção de sistemas e ferramentas desenvolvidos ao longo da minha jornada em tecnologia.</p>
+                    <p><strong>Foco em automação, sistemas backend, Business Intelligence e soluções orientadas a dados.</strong></p>
+                </div>
+            </header>
+
+            <!-- FILTER TABS -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Todos</button>
+                <button class="filter-tab" data-filter="backend">Backend</button>
+                <button class="filter-tab" data-filter="automacao">Automação</button>
+                <button class="filter-tab" data-filter="dados">Dados & BI</button>
+                <button class="filter-tab" data-filter="seguranca">Segurança</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- 1. Automação Python -->
+                <article class="project-card" data-category="automacao">
+                    <div class="project-icon">🤖</div>
+                    <h2 class="project-title">Automação de Servidores</h2>
+                    <div class="project-subtitle">Python · Scripts · DevOps</div>
+                    <p class="project-description">
+                        Robôs e scripts em Python para automação de tarefas em servidores, 
+                        reduzindo processos manuais e aumentando a <strong>eficiência operacional</strong> 
+                        em ambientes de infraestrutura.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scripts</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Automação</span>
+                    </div>
+                    <a href="http://localhost:1313/projects/automacao-python/" class="project-link">Ver projeto →</a>
+                </article>
+
+                <!-- 2. Dashboards -->
+                <article class="project-card" data-category="dados">
+                    <div class="project-icon">📊</div>
+                    <h2 class="project-title">Dashboards Empresariais</h2>
+                    <div class="project-subtitle">Power BI · SQL · Business Intelligence</div>
+                    <p class="project-description">
+                        Painéis interativos para áreas de <strong>Financeiro, RH, Marketing e Comercial</strong>, 
+                        transformando dados brutos em informações claras para apoiar decisões estratégicas.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">DAX</span>
+                        <span class="tag">ETL</span>
+                    </div>
+                    <a href="http://localhost:1313/projects/dashboards/" class="project-link">Ver projeto →</a>
+                </article>
+
+                <!-- 3. Otimizador C# -->
+                <article class="project-card" data-category="backend automacao">
+                    <div class="project-icon">⚙️</div>
+                    <h2 class="project-title">Otimizador de Sistema</h2>
+                    <div class="project-subtitle">C# · .NET · WPF · Windows</div>
+                    <p class="project-description">
+                        Aplicação desktop para <strong>otimização de desempenho</strong> e gerenciamento 
+                        de recursos do Windows, com análise de processos e ajustes de performance.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">WPF</span>
+                        <span class="tag">Windows</span>
+                    </div>
+                    <a href="http://localhost:1313/projects/otimizador-csharp/" class="project-link">Ver projeto →</a>
+                </article>
+
+                <!-- 4. Anti-Cheat Python -->
+                <article class="project-card" data-category="seguranca automacao">
+                    <div class="project-icon">🛡️</div>
+                    <h2 class="project-title">Sistema AntiCheat</h2>
+                    <div class="project-subtitle">Python · Segurança · SHA256</div>
+                    <p class="project-description">
+                        Sistema para <strong>análise e identificação de arquivos suspeitos</strong> 
+                        com varredura automatizada, geração de hashes SHA-256, exportação CSV e 
+                        integração com Discord.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Segurança</span>
+                        <span class="tag">SHA256</span>
+                        <span class="tag">Discord API</span>
+                    </div>
+                    <a href="http://localhost:1313/projects/anti-cheat/" class="project-link">Ver projeto →</a>
+                </article>
+
+                <!-- 5. Estoque Spring Boot -->
+                <article class="project-card" data-category="backend">
+                    <div class="project-icon">📦</div>
+                    <h2 class="project-title">Sistema de Estoque</h2>
+                    <div class="project-subtitle">Spring Boot · Java · PostgreSQL</div>
+                    <p class="project-description">
+                        Backend para <strong>controle de estoque</strong> com CRUD completo, 
+                        arquitetura escalável e boas práticas de desenvolvimento usando 
+                        Spring Boot, JPA/Hibernate e PostgreSQL.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">JPA</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="http://localhost:1313/projects/estoque-spring/" class="project-link">Ver projeto →</a>
+                </article>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2026 <a href="http://localhost:1313/">Isaac Maciel</a></span>
+            <span>
+                Desenvolvido com <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+            </span>
+        </footer>
+    </div>
+
+    <a href="#" id="top-link" class="top-link" aria-label="Voltar ao topo">
+        ↑
+    </a>
+
+    <script>
+        // ============================================
+        // THEME TOGGLE
+        // ============================================
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.querySelector('html');
+
+        // Função para alternar o tema
+        function toggleTheme() {
+            const currentTheme = htmlElement.dataset.theme;
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.dataset.theme = newTheme;
+            localStorage.setItem('pref-theme', newTheme);
+        }
+
+        // Event listener do botão de tema
+        themeToggle?.addEventListener('click', toggleTheme);
+
+        // ============================================
+        // SMOOTH SCROLL TO TOP
+        // ============================================
+        const topLink = document.getElementById('top-link');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                topLink.classList.add('visible');
             } else {
-                history.pushState(null, null, `#${id}`);
+                topLink.classList.remove('visible');
             }
         });
-    });
 
-</script>
-<script>
-    var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+        topLink?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ============================================
+        // FILTER PROJECTS
+        // ============================================
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const projects = document.querySelectorAll('.project-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                filterTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                projects.forEach(project => {
+                    const categories = project.dataset.category;
+                    if (filter === 'all' || categories.includes(filter)) {
+                        project.style.display = 'flex';
+                        // Pequena animação de fade
+                        project.style.opacity = '0';
+                        setTimeout(() => {
+                            project.style.opacity = '1';
+                            project.style.transition = 'opacity 0.3s ease';
+                        }, 50);
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ============================================
+        // MENU SCROLL POSITION
+        // ============================================
+        let menu = document.getElementById('menu');
+        if (menu) {
+            const scrollPosition = localStorage.getItem('menu-scroll-position');
+            if (scrollPosition) {
+                menu.scrollLeft = parseInt(scrollPosition, 10);
+            }
+            menu.onscroll = function () {
+                localStorage.setItem('menu-scroll-position', menu.scrollLeft);
+            }
         }
-    };
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
+        // ============================================
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const id = href.substr(1);
+                if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    document.querySelector(`[id='${decodeURIComponent(id)}']`)?.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    document.querySelector(`[id='${decodeURIComponent(id)}']`)?.scrollIntoView();
+                }
+                if (id === 'top') {
+                    history.replaceState(null, null, ' ');
+                } else {
+                    history.pushState(null, null, `#${id}`);
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>

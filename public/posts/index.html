@@ -1,315 +1,744 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="dark">
+<html lang="pt-br" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Posts | Isaac Maciel</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - Isaac Maciel">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
-<noscript>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Artigos | Isaac Maciel</title>
+    <meta name="keywords" content="artigos, blog, tecnologia, desenvolvimento, backend">
+    <meta name="description" content="Artigos sobre desenvolvimento de software, backend, automação e engenharia de dados.">
+    
     <style>
-        #theme-toggle,
-        .top-link {
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        .header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 1.5rem;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f0f6fc;
+            letter-spacing: -0.5px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .menu a {
+            color: #8b949e;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .menu a:hover,
+        .menu .active {
+            color: #f0f6fc;
+            text-decoration: none;
+        }
+
+        .menu .active {
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 5px;
+        }
+
+        /* PAGE HEADER */
+        .page-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #f0f6fc;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .page-header .badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(88, 166, 255, 0.15);
+            color: #58a6ff;
+            padding: 0.2rem 1rem;
+            border-radius: 50px;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+        }
+
+        .page-header .description {
+            color: #8b949e;
+            font-size: 1.1rem;
+            margin-top: 0.3rem;
+        }
+
+        /* STATS */
+        .stats-bar {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            border: 1px solid #30363d;
+        }
+
+        .stats-bar .stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        .stats-bar .stat strong {
+            color: #f0f6fc;
+        }
+
+        /* ARTICLES GRID */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .article-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1.8rem 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #58a6ff, #a100ff);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .article-card:hover {
+            border-color: #58a6ff;
+            transform: translateX(4px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .article-card:hover::before {
+            opacity: 1;
+        }
+
+        .article-card .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #f0f6fc;
+            transition: color 0.2s;
+            line-height: 1.3;
+        }
+
+        .article-card:hover h2 {
+            color: #58a6ff;
+        }
+
+        .article-card .meta {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #8b949e;
+            margin-top: 0.3rem;
+        }
+
+        .article-card .meta .date {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 0.15rem 0.7rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+        }
+
+        .article-card .meta .read-time {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .article-card .meta .category {
+            background: rgba(88, 166, 255, 0.08);
+            border: 1px solid rgba(88, 166, 255, 0.15);
+            padding: 0.15rem 0.7rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: #58a6ff;
+            font-weight: 500;
+        }
+
+        .article-card .excerpt {
+            color: #b0b8c4;
+            font-size: 0.95rem;
+            margin-top: 0.8rem;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .article-card .tags .tag {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid #30363d;
+            padding: 0.15rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #8b949e;
+            transition: all 0.2s;
+        }
+
+        .article-card .tags .tag:hover {
+            border-color: #58a6ff;
+            color: #f0f6fc;
+            text-decoration: none;
+        }
+
+        .article-card .card-link {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #58a6ff;
+            transition: all 0.2s;
+        }
+
+        .article-card .card-link:hover {
+            text-decoration: none;
+            transform: translateX(4px);
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer a {
+            color: #8b949e;
+        }
+        .footer a:hover {
+            color: #f0f6fc;
+        }
+
+        /* TOP LINK */
+        #top-link {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #30363d;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f0f6fc;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+        }
+
+        #top-link:hover {
+            background: rgba(88, 166, 255, 0.15);
+            border-color: #58a6ff;
+            text-decoration: none;
+        }
+
+        #top-link.hidden {
             display: none;
         }
 
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .header-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .menu {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+            }
+            .page-header h1 {
+                font-size: 2rem;
+                flex-wrap: wrap;
+            }
+            .article-card {
+                padding: 1.2rem 1.2rem;
+            }
+            .article-card h2 {
+                font-size: 1.1rem;
+            }
+            .stats-bar {
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.6rem;
+            }
+            .article-card .card-header {
+                flex-direction: column;
+            }
+            .article-card .meta {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* TEMA CLARO */
+        [data-theme="light"] body {
+            background-color: #f6f8fa;
+            color: #1f2328;
+        }
+        [data-theme="light"] .logo a {
+            color: #1f2328;
+        }
+        [data-theme="light"] .menu a {
+            color: #57606a;
+        }
+        [data-theme="light"] .menu a:hover,
+        [data-theme="light"] .menu .active {
+            color: #1f2328;
+        }
+        [data-theme="light"] .page-header h1 {
+            color: #1f2328;
+        }
+        [data-theme="light"] .page-header .badge {
+            background: rgba(9, 105, 218, 0.1);
+            color: #0969da;
+            border-color: rgba(9, 105, 218, 0.2);
+        }
+        [data-theme="light"] .page-header .description {
+            color: #57606a;
+        }
+        [data-theme="light"] .stats-bar {
+            background: #ffffff;
+            border-color: #d0d7de;
+        }
+        [data-theme="light"] .stats-bar .stat {
+            color: #57606a;
+        }
+        [data-theme="light"] .stats-bar .stat strong {
+            color: #1f2328;
+        }
+        [data-theme="light"] .article-card {
+            background: #ffffff;
+            border-color: #d0d7de;
+        }
+        [data-theme="light"] .article-card:hover {
+            border-color: #0969da;
+        }
+        [data-theme="light"] .article-card h2 {
+            color: #1f2328;
+        }
+        [data-theme="light"] .article-card:hover h2 {
+            color: #0969da;
+        }
+        [data-theme="light"] .article-card .excerpt {
+            color: #57606a;
+        }
+        [data-theme="light"] .article-card .meta {
+            color: #57606a;
+        }
+        [data-theme="light"] .article-card .meta .date {
+            background: #e1e4e8;
+        }
+        [data-theme="light"] .article-card .meta .category {
+            background: #ddf4ff;
+            border-color: #b6e3ff;
+            color: #0969da;
+        }
+        [data-theme="light"] .article-card .tags {
+            border-top-color: #d0d7de;
+        }
+        [data-theme="light"] .article-card .tags .tag {
+            background: #e1e4e8;
+            border-color: #d0d7de;
+            color: #57606a;
+        }
+        [data-theme="light"] .article-card .tags .tag:hover {
+            border-color: #0969da;
+            color: #1f2328;
+        }
+        [data-theme="light"] .header {
+            border-bottom-color: #d0d7de;
+        }
+        [data-theme="light"] .page-header {
+            border-bottom-color: #d0d7de;
+        }
+        [data-theme="light"] .footer {
+            border-top-color: #d0d7de;
+            color: #57606a;
+        }
+        [data-theme="light"] .footer a {
+            color: #57606a;
+        }
+        [data-theme="light"] #top-link {
+            background: #ffffff;
+            border-color: #d0d7de;
+            color: #1f2328;
+        }
+        [data-theme="light"] #top-link:hover {
+            background: #f0f6fc;
+            border-color: #0969da;
+        }
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.querySelector("html").dataset.theme = 'light';
-    }
 
-</script>
+    <script>
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.querySelector("html").dataset.theme = 'light';
+        }
+    </script>
 </head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="header-nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Isaac Maciel (Alt + H)">Isaac Maciel</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
+
+<body id="top">
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="http://localhost:1313/" accesskey="h" title="Isaac Maciel (Alt + H)">Isaac Maciel</a>
+                </div>
+                <ul id="menu" class="menu">
+                    <li><a href="http://localhost:1313/about/" title="Sobre">Sobre</a></li>
+                    <li><a href="http://localhost:1313/projects/" title="Projetos">Projetos</a></li>
+                    <li><a href="http://localhost:1313/posts/" title="Artigos" class="active">Artigos</a></li>
+                    <li><a href="http://localhost:1313/cv/" title="CV">CV</a></li>
+                    <li><a href="http://localhost:1313/contact/" title="Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <header class="page-header">
+                <h1>
+                    📝 Artigos
+                    <span class="badge">7 artigos</span>
+                </h1>
+                <p class="description">
+                    Artigos sobre desenvolvimento de software, backend, automação, engenharia de dados e boas práticas.
+                </p>
+            </header>
+
+            <!-- STATS -->
+            <div class="stats-bar">
+                <span class="stat">
+                    📚 <strong>7</strong> artigos publicados
+                </span>
+                <span class="stat">
+                    🏷️ <strong>5</strong> categorias
+                </span>
+                <span class="stat">
+                    ⏱️ <strong>12 min</strong> de leitura total
+                </span>
             </div>
-        </div>
-        <ul id="menu" class="menu">
-            <li>
-                <a href="http://localhost:1313/about/" title="Sobre">
-                    <span>Sobre</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/projects/" title="Projetos">
-                    <span>Projetos</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/posts/" title="Artigos">
-                    <span class="active">Artigos</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/cv/" title="CV">
-                    <span>CV</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/contact/" title="Contato">
-                    <span>Contato</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Posts
-  </h1>
-</header>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Arquitetura de APIs REST para Sistemas Corporativos
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Arquitetura de APIs REST para Sistemas Corporativos Introdução As APIs REST tornaram-se o principal mecanismo de integração entre aplicações modernas. Uma arquitetura bem planejada contribui para a escalabilidade, manutenção e segurança dos sistemas.
-O que é uma API REST? Uma API REST permite que aplicações troquem informações através do protocolo HTTP.
-Principais métodos:
-GET POST PUT DELETE Estrutura Recomendada Uma arquitetura backend geralmente é composta por:
-Controller Service Repository DTO Entity Essa separação favorece a organização e a manutenção do código.
-...</p>
-  </div>
-  <footer class="entry-footer">
+            <!-- ARTICLES GRID -->
+            <div class="articles-grid">
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Arquitetura de APIs REST para Sistemas Corporativos" href="http://localhost:1313/posts/api-rest-sistemas-corporativos/"></a>
-</article>
+                <!-- Artigo: ETL -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>ETL na Prática: Transformando Dados em Informação Estratégica</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 2 min de leitura</span>
+                        <span class="category">📊 Engenharia de Dados</span>
+                    </div>
+                    <p class="excerpt">
+                        Aprenda na prática como funciona o processo ETL (Extract, Transform, Load) e como transformar dados brutos em informações estratégicas para tomada de decisão. Conheça as etapas, ferramentas e benefícios deste processo fundamental.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#etl</span>
+                        <span class="tag">#engenhariadedados</span>
+                        <span class="tag">#python</span>
+                        <span class="tag">#sql</span>
+                        <span class="tag">#bi</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/etl-pratica/" class="card-link">Ler artigo →</a>
+                </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Como construí meu primeiro sistema de segurança
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.
-O problema Detectar arquivos maliciosos em ambientes locais.
-A solução Uso de hash SHA256 &#43; padrões de nome &#43; análise de diretórios.
-Aprendizado Performance e organização são fundamentais em sistemas de scan.
-</p>
-  </div>
-  <footer class="entry-footer">
+                <!-- Artigo: APIs REST -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Arquitetura de APIs REST para Sistemas Corporativos</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 1 min de leitura</span>
+                        <span class="category">🚀 Backend</span>
+                    </div>
+                    <p class="excerpt">
+                        As APIs REST tornaram-se o principal mecanismo de integração entre aplicações modernas. Conheça os princípios, métodos HTTP e a estrutura recomendada para construir APIs escaláveis e de fácil manutenção.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#api</span>
+                        <span class="tag">#rest</span>
+                        <span class="tag">#arquitetura</span>
+                        <span class="tag">#backend</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/api-rest-sistemas-corporativos/" class="card-link">Ler artigo →</a>
+                </article>
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Como construí meu primeiro sistema de segurança" href="http://localhost:1313/posts/primeiro-post/"></a>
-</article>
+                <!-- Artigo: Docker -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 1 min de leitura</span>
+                        <span class="category">🐳 DevOps</span>
+                    </div>
+                    <p class="excerpt">
+                        Descubra como o Docker pode revolucionar seu fluxo de desenvolvimento, criando ambientes padronizados que funcionam da mesma forma em qualquer lugar. Aprenda os conceitos básicos e como aplicar na prática.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#docker</span>
+                        <span class="tag">#devops</span>
+                        <span class="tag">#containers</span>
+                        <span class="tag">#backend</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/docker/" class="card-link">Ler artigo →</a>
+                </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Como Transformei um Notebook Antigo em um Servidor Ubuntu
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.
-O objetivo Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.
-Hardware utilizado Notebook antigo SSD para melhorar o desempenho Conexão de rede cabeada Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.
-Instalação do Ubuntu Server O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.
-...</p>
-  </div>
-  <footer class="entry-footer">
+                <!-- Artigo: Dashboards -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Dashboards Inteligentes: Transformando Dados em Decisões</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 2 min de leitura</span>
+                        <span class="category">📊 Business Intelligence</span>
+                    </div>
+                    <p class="excerpt">
+                        Entenda como dashboards e KPIs podem transformar dados complexos em visualizações simples e estratégicas. Aprenda a criar dashboards que realmente apoiam a tomada de decisão nas empresas.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#dashboard</span>
+                        <span class="tag">#bi</span>
+                        <span class="tag">#kpi</span>
+                        <span class="tag">#dados</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/dashboard/" class="card-link">Ler artigo →</a>
+                </article>
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Como Transformei um Notebook Antigo em um Servidor Ubuntu" href="http://localhost:1313/posts/serv/"></a>
-</article>
+                <!-- Artigo: Modelagem de Dados -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Modelagem de Banco de Dados para Alta Performance</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 1 min de leitura</span>
+                        <span class="category">🗄️ Banco de Dados</span>
+                    </div>
+                    <p class="excerpt">
+                        Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos. Conheça os conceitos de normalização, índices e boas práticas para otimização.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#modelagem</span>
+                        <span class="tag">#sql</span>
+                        <span class="tag">#performance</span>
+                        <span class="tag">#database</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/modelage/" class="card-link">Ler artigo →</a>
+                </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Dashboards Inteligentes: Transformando Dados em Decisões
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Dashboards Inteligentes: Transformando Dados em Decisões Introdução Empresas modernas precisam tomar decisões rápidas e baseadas em informações confiáveis.
-Os dashboards surgem como ferramentas fundamentais para transformar dados complexos em visualizações simples e estratégicas.
-O que é um Dashboard? Um dashboard é uma representação visual de informações importantes para acompanhamento de indicadores.
-Ele permite:
-Monitorar resultados; Identificar problemas; Encontrar oportunidades; Apoiar decisões. A importância dos KPIs Os KPIs (Key Performance Indicators) são indicadores utilizados para medir desempenho.
-...</p>
-  </div>
-  <footer class="entry-footer">
+                <!-- Artigo: Servidor Ubuntu -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Como Transformei um Notebook Antigo em um Servidor Ubuntu</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 2 min de leitura</span>
+                        <span class="category">🐧 Linux</span>
+                    </div>
+                    <p class="excerpt">
+                        Compartilho minha experiência reaproveitando um notebook antigo para criar um servidor de estudos utilizando Ubuntu Server. Veja o passo a passo da instalação e configuração.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#ubuntu</span>
+                        <span class="tag">#linux</span>
+                        <span class="tag">#servidor</span>
+                        <span class="tag">#homelab</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/serv/" class="card-link">Ler artigo →</a>
+                </article>
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to Dashboards Inteligentes: Transformando Dados em Decisões" href="http://localhost:1313/posts/dashboard/"></a>
-</article>
+                <!-- Artigo: Sistema de Segurança -->
+                <article class="article-card">
+                    <div class="card-header">
+                        <h2>Como construí meu primeiro sistema de segurança</h2>
+                    </div>
+                    <div class="meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="read-time">⏱️ 1 min de leitura</span>
+                        <span class="category">🔒 Segurança</span>
+                    </div>
+                    <p class="excerpt">
+                        Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python, utilizando hash SHA256, padrões de nome e análise de diretórios para detectar possíveis ameaças.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">#segurança</span>
+                        <span class="tag">#python</span>
+                        <span class="tag">#anticheat</span>
+                        <span class="tag">#sha256</span>
+                    </div>
+                    <a href="http://localhost:1313/posts/primeiro-post/" class="card-link">Ler artigo →</a>
+                </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Docker para Desenvolvedores Backend: Da Máquina Local à Produção
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Docker para Desenvolvedores Backend: Da Máquina Local à Produção Introdução Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.
-O Docker surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.
-O que é Docker? Docker é uma plataforma de containers que permite empacotar aplicações junto com suas dependências.
-Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.
-...</p>
-  </div>
-  <footer class="entry-footer">
+            </div>
+        </main>
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Docker para Desenvolvedores Backend: Da Máquina Local à Produção" href="http://localhost:1313/posts/docker/"></a>
-</article>
+        <footer class="footer">
+            <span>&copy; 2026 <a href="http://localhost:1313/">Isaac Maciel</a></span>
+            <span>
+                Desenvolvido com <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+            </span>
+        </footer>
+    </div>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Docker para Desenvolvedores Backend: Da Máquina Local à Produção
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Modelagem de Banco de Dados para Alta Performance Introdução Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.
-Conceitos Fundamentais Os modelos geralmente são divididos em:
-Conceitual Lógico Físico Chaves e Relacionamentos Elementos essenciais:
-Chave Primária Chave Estrangeira Relacionamentos Índices Normalização A normalização reduz redundâncias e melhora a consistência dos dados.
-Principais formas normais:
-1FN 2FN 3FN Otimização Algumas práticas importantes:
-Criar índices adequados Evitar SELECT * Utilizar filtros eficientes Monitorar consultas Benefícios Melhor desempenho Menor redundância Maior integridade Facilidade de manutenção Conclusão Investir em modelagem de dados é essencial para construir sistemas preparados para crescimento sustentável.
-</p>
-  </div>
-  <footer class="entry-footer">
+    <a href="#top" id="top-link" class="hidden" aria-label="go to top" title="Go to Top">
+        ↑
+    </a>
 
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to Docker para Desenvolvedores Backend: Da Máquina Local à Produção" href="http://localhost:1313/posts/modelage/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ETL na Prática: Transformando Dados em Informação Estratégica
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>ETL na Prática: Transformando Dados em Informação Estratégica Introdução Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.
-O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.
-O que é ETL? ETL representa três etapas fundamentais:
-Extract (Extração) Transform (Transformação) Load (Carga) Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-07-06 00:00:00 +0000 UTC'>6 de julho de 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to ETL na Prática: Transformando Dados em Informação Estratégica" href="http://localhost:1313/posts/etl-pratica/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Isaac Maciel</a></span> · 
-
-    
-    
-    <span>
-        Powered by
-        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
-        <polyline points="17 11 12 6 7 11"></polyline>
-        <polyline points="17 18 12 13 7 18"></polyline>
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+    <script>
+        // Menu scroll position
+        let menu = document.getElementById('menu');
+        if (menu) {
+            const scrollPosition = localStorage.getItem("menu-scroll-position");
+            if (scrollPosition) {
+                menu.scrollLeft = parseInt(scrollPosition, 10);
             }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
+            menu.onscroll = function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
             }
+        }
+
+        // Top link
+        var toplink = document.getElementById("top-link");
+        window.onscroll = function () {
+            const scrollThreshold = window.innerHeight;
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                toplink.classList.remove("hidden");
+            } else {
+                toplink.classList.add("hidden");
+            }
+        };
+
+        // Theme toggle
+        document.getElementById("theme-toggle")?.addEventListener("click", () => {
+            const html = document.querySelector("html");
+            const current = html.dataset.theme;
+            const next = current === "dark" ? "light" : "dark";
+            html.dataset.theme = next;
+            localStorage.setItem("pref-theme", next);
         });
-    });
 
-</script>
-<script>
-    var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
+        // Smooth scroll to top
+        toplink?.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
-
 </html>

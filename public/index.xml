@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Isaac Maciel</title>
     <link>http://localhost:1313/</link>
@@ -13,276 +13,105 @@
       <link>http://localhost:1313/posts/api-rest-sistemas-corporativos/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/api-rest-sistemas-corporativos/</guid>
-      <description>&lt;h1 id=&#34;arquitetura-de-apis-rest-para-sistemas-corporativos&#34;&gt;Arquitetura de APIs REST para Sistemas Corporativos&lt;/h1&gt;
-&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;As APIs REST tornaram-se o principal mecanismo de integração entre aplicações modernas. Uma arquitetura bem planejada contribui para a escalabilidade, manutenção e segurança dos sistemas.&lt;/p&gt;
-&lt;h2 id=&#34;o-que-é-uma-api-rest&#34;&gt;O que é uma API REST?&lt;/h2&gt;
-&lt;p&gt;Uma API REST permite que aplicações troquem informações através do protocolo HTTP.&lt;/p&gt;
-&lt;p&gt;Principais métodos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GET&lt;/li&gt;
-&lt;li&gt;POST&lt;/li&gt;
-&lt;li&gt;PUT&lt;/li&gt;
-&lt;li&gt;DELETE&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;estrutura-recomendada&#34;&gt;Estrutura Recomendada&lt;/h2&gt;
-&lt;p&gt;Uma arquitetura backend geralmente é composta por:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Controller&lt;/li&gt;
-&lt;li&gt;Service&lt;/li&gt;
-&lt;li&gt;Repository&lt;/li&gt;
-&lt;li&gt;DTO&lt;/li&gt;
-&lt;li&gt;Entity&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Essa separação favorece a organização e a manutenção do código.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Automação de Servidores (Python)</title>
-      <link>http://localhost:1313/projects/automacao-python/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/automacao-python/</guid>
-      <description>&lt;p&gt;Criação de robôs e scripts em Python para automação de tarefas em servidores.&lt;/p&gt;
-&lt;p&gt;Objetivo: reduzir processos manuais e aumentar eficiência operacional.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;arquitetura-de-apis-rest-para-sistemas-corporativos&#34;&gt;Arquitetura de APIs REST para Sistemas Corporativos&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;As APIs REST tornaram-se o principal mecanismo de integração entre aplicações modernas. Uma arquitetura bem planejada contribui para a escalabilidade, manutenção e segurança dos sistemas.&lt;/p&gt;&#xA;&lt;h2 id=&#34;o-que-é-uma-api-rest&#34;&gt;O que é uma API REST?&lt;/h2&gt;&#xA;&lt;p&gt;Uma API REST permite que aplicações troquem informações através do protocolo HTTP.&lt;/p&gt;&#xA;&lt;p&gt;Principais métodos:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GET&lt;/li&gt;&#xA;&lt;li&gt;POST&lt;/li&gt;&#xA;&lt;li&gt;PUT&lt;/li&gt;&#xA;&lt;li&gt;DELETE&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;estrutura-recomendada&#34;&gt;Estrutura Recomendada&lt;/h2&gt;&#xA;&lt;p&gt;Uma arquitetura backend geralmente é composta por:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Controller&lt;/li&gt;&#xA;&lt;li&gt;Service&lt;/li&gt;&#xA;&lt;li&gt;Repository&lt;/li&gt;&#xA;&lt;li&gt;DTO&lt;/li&gt;&#xA;&lt;li&gt;Entity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Essa separação favorece a organização e a manutenção do código.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Como construí meu primeiro sistema de segurança</title>
       <link>http://localhost:1313/posts/primeiro-post/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/primeiro-post/</guid>
-      <description>&lt;p&gt;Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;o-problema&#34;&gt;O problema&lt;/h2&gt;
-&lt;p&gt;Detectar arquivos maliciosos em ambientes locais.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;a-solução&#34;&gt;A solução&lt;/h2&gt;
-&lt;p&gt;Uso de hash SHA256 + padrões de nome + análise de diretórios.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;aprendizado&#34;&gt;Aprendizado&lt;/h2&gt;
-&lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Neste artigo explico como criei um sistema de análise de arquivos suspeitos usando Python.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-problema&#34;&gt;O problema&lt;/h2&gt;&#xA;&lt;p&gt;Detectar arquivos maliciosos em ambientes locais.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;a-solução&#34;&gt;A solução&lt;/h2&gt;&#xA;&lt;p&gt;Uso de hash SHA256 + padrões de nome + análise de diretórios.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;aprendizado&#34;&gt;Aprendizado&lt;/h2&gt;&#xA;&lt;p&gt;Performance e organização são fundamentais em sistemas de scan.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Como Transformei um Notebook Antigo em um Servidor Ubuntu</title>
       <link>http://localhost:1313/posts/serv/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/serv/</guid>
-      <description>&lt;p&gt;Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;o-objetivo&#34;&gt;O objetivo&lt;/h2&gt;
-&lt;p&gt;Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;hardware-utilizado&#34;&gt;Hardware utilizado&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Notebook antigo&lt;/li&gt;
-&lt;li&gt;SSD para melhorar o desempenho&lt;/li&gt;
-&lt;li&gt;Conexão de rede cabeada&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;instalação-do-ubuntu-server&#34;&gt;Instalação do Ubuntu Server&lt;/h2&gt;
-&lt;p&gt;O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dashboards Empresariais</title>
-      <link>http://localhost:1313/projects/dashboards/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/dashboards/</guid>
-      <description>&lt;p&gt;Desenvolvimento de dashboards para diferentes áreas de negócio:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Financeiro&lt;/li&gt;
-&lt;li&gt;Recursos Humanos&lt;/li&gt;
-&lt;li&gt;Marketing&lt;/li&gt;
-&lt;li&gt;Comercial&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Foco em visualização de dados e suporte à tomada de decisão.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Neste artigo compartilho como reaproveitei um notebook antigo para criar um servidor utilizando Ubuntu Server.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-objetivo&#34;&gt;O objetivo&lt;/h2&gt;&#xA;&lt;p&gt;Criar um ambiente de estudos e hospedagem utilizando hardware que estava sem uso.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;hardware-utilizado&#34;&gt;Hardware utilizado&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Notebook antigo&lt;/li&gt;&#xA;&lt;li&gt;SSD para melhorar o desempenho&lt;/li&gt;&#xA;&lt;li&gt;Conexão de rede cabeada&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Mesmo sendo um equipamento simples, foi suficiente para executar diversos serviços.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;instalação-do-ubuntu-server&#34;&gt;Instalação do Ubuntu Server&lt;/h2&gt;&#xA;&lt;p&gt;O primeiro passo foi baixar a imagem do Ubuntu Server e criar um pendrive bootável.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dashboards Inteligentes: Transformando Dados em Decisões</title>
       <link>http://localhost:1313/posts/dashboard/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/dashboard/</guid>
-      <description>&lt;h1 id=&#34;dashboards-inteligentes-transformando-dados-em-decisões&#34;&gt;Dashboards Inteligentes: Transformando Dados em Decisões&lt;/h1&gt;
-&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Empresas modernas precisam tomar decisões rápidas e baseadas em informações confiáveis.&lt;/p&gt;
-&lt;p&gt;Os dashboards surgem como ferramentas fundamentais para transformar dados complexos em visualizações simples e estratégicas.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;o-que-é-um-dashboard&#34;&gt;O que é um Dashboard?&lt;/h1&gt;
-&lt;p&gt;Um dashboard é uma representação visual de informações importantes para acompanhamento de indicadores.&lt;/p&gt;
-&lt;p&gt;Ele permite:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Monitorar resultados;&lt;/li&gt;
-&lt;li&gt;Identificar problemas;&lt;/li&gt;
-&lt;li&gt;Encontrar oportunidades;&lt;/li&gt;
-&lt;li&gt;Apoiar decisões.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;a-importância-dos-kpis&#34;&gt;A importância dos KPIs&lt;/h1&gt;
-&lt;p&gt;Os KPIs (Key Performance Indicators) são indicadores utilizados para medir desempenho.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;dashboards-inteligentes-transformando-dados-em-decisões&#34;&gt;Dashboards Inteligentes: Transformando Dados em Decisões&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Empresas modernas precisam tomar decisões rápidas e baseadas em informações confiáveis.&lt;/p&gt;&#xA;&lt;p&gt;Os dashboards surgem como ferramentas fundamentais para transformar dados complexos em visualizações simples e estratégicas.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;o-que-é-um-dashboard&#34;&gt;O que é um Dashboard?&lt;/h1&gt;&#xA;&lt;p&gt;Um dashboard é uma representação visual de informações importantes para acompanhamento de indicadores.&lt;/p&gt;&#xA;&lt;p&gt;Ele permite:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Monitorar resultados;&lt;/li&gt;&#xA;&lt;li&gt;Identificar problemas;&lt;/li&gt;&#xA;&lt;li&gt;Encontrar oportunidades;&lt;/li&gt;&#xA;&lt;li&gt;Apoiar decisões.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;a-importância-dos-kpis&#34;&gt;A importância dos KPIs&lt;/h1&gt;&#xA;&lt;p&gt;Os KPIs (Key Performance Indicators) são indicadores utilizados para medir desempenho.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
       <link>http://localhost:1313/posts/docker/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/docker/</guid>
-      <description>&lt;h1 id=&#34;docker-para-desenvolvedores-backend-da-máquina-local-à-produção&#34;&gt;Docker para Desenvolvedores Backend: Da Máquina Local à Produção&lt;/h1&gt;
-&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.&lt;/p&gt;
-&lt;p&gt;O Docker surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;o-que-é-docker&#34;&gt;O que é Docker?&lt;/h1&gt;
-&lt;p&gt;Docker é uma plataforma de containers que permite empacotar aplicações junto com suas dependências.&lt;/p&gt;
-&lt;p&gt;Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;docker-para-desenvolvedores-backend-da-máquina-local-à-produção&#34;&gt;Docker para Desenvolvedores Backend: Da Máquina Local à Produção&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.&lt;/p&gt;&#xA;&lt;p&gt;O Docker surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;o-que-é-docker&#34;&gt;O que é Docker?&lt;/h1&gt;&#xA;&lt;p&gt;Docker é uma plataforma de containers que permite empacotar aplicações junto com suas dependências.&lt;/p&gt;&#xA;&lt;p&gt;Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</title>
       <link>http://localhost:1313/posts/modelage/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/modelage/</guid>
-      <description>&lt;h1 id=&#34;modelagem-de-banco-de-dados-para-alta-performance&#34;&gt;Modelagem de Banco de Dados para Alta Performance&lt;/h1&gt;
-&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.&lt;/p&gt;
-&lt;h2 id=&#34;conceitos-fundamentais&#34;&gt;Conceitos Fundamentais&lt;/h2&gt;
-&lt;p&gt;Os modelos geralmente são divididos em:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Conceitual&lt;/li&gt;
-&lt;li&gt;Lógico&lt;/li&gt;
-&lt;li&gt;Físico&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;chaves-e-relacionamentos&#34;&gt;Chaves e Relacionamentos&lt;/h2&gt;
-&lt;p&gt;Elementos essenciais:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Chave Primária&lt;/li&gt;
-&lt;li&gt;Chave Estrangeira&lt;/li&gt;
-&lt;li&gt;Relacionamentos&lt;/li&gt;
-&lt;li&gt;Índices&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;normalização&#34;&gt;Normalização&lt;/h2&gt;
-&lt;p&gt;A normalização reduz redundâncias e melhora a consistência dos dados.&lt;/p&gt;
-&lt;p&gt;Principais formas normais:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1FN&lt;/li&gt;
-&lt;li&gt;2FN&lt;/li&gt;
-&lt;li&gt;3FN&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;otimização&#34;&gt;Otimização&lt;/h2&gt;
-&lt;p&gt;Algumas práticas importantes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Criar índices adequados&lt;/li&gt;
-&lt;li&gt;Evitar SELECT *&lt;/li&gt;
-&lt;li&gt;Utilizar filtros eficientes&lt;/li&gt;
-&lt;li&gt;Monitorar consultas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;benefícios&#34;&gt;Benefícios&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Melhor desempenho&lt;/li&gt;
-&lt;li&gt;Menor redundância&lt;/li&gt;
-&lt;li&gt;Maior integridade&lt;/li&gt;
-&lt;li&gt;Facilidade de manutenção&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
-&lt;p&gt;Investir em modelagem de dados é essencial para construir sistemas preparados para crescimento sustentável.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;modelagem-de-banco-de-dados-para-alta-performance&#34;&gt;Modelagem de Banco de Dados para Alta Performance&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Uma modelagem eficiente é fundamental para garantir desempenho, integridade e escalabilidade em sistemas corporativos.&lt;/p&gt;&#xA;&lt;h2 id=&#34;conceitos-fundamentais&#34;&gt;Conceitos Fundamentais&lt;/h2&gt;&#xA;&lt;p&gt;Os modelos geralmente são divididos em:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Conceitual&lt;/li&gt;&#xA;&lt;li&gt;Lógico&lt;/li&gt;&#xA;&lt;li&gt;Físico&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;chaves-e-relacionamentos&#34;&gt;Chaves e Relacionamentos&lt;/h2&gt;&#xA;&lt;p&gt;Elementos essenciais:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Chave Primária&lt;/li&gt;&#xA;&lt;li&gt;Chave Estrangeira&lt;/li&gt;&#xA;&lt;li&gt;Relacionamentos&lt;/li&gt;&#xA;&lt;li&gt;Índices&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;normalização&#34;&gt;Normalização&lt;/h2&gt;&#xA;&lt;p&gt;A normalização reduz redundâncias e melhora a consistência dos dados.&lt;/p&gt;&#xA;&lt;p&gt;Principais formas normais:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1FN&lt;/li&gt;&#xA;&lt;li&gt;2FN&lt;/li&gt;&#xA;&lt;li&gt;3FN&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;otimização&#34;&gt;Otimização&lt;/h2&gt;&#xA;&lt;p&gt;Algumas práticas importantes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Criar índices adequados&lt;/li&gt;&#xA;&lt;li&gt;Evitar SELECT *&lt;/li&gt;&#xA;&lt;li&gt;Utilizar filtros eficientes&lt;/li&gt;&#xA;&lt;li&gt;Monitorar consultas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefícios&#34;&gt;Benefícios&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Melhor desempenho&lt;/li&gt;&#xA;&lt;li&gt;Menor redundância&lt;/li&gt;&#xA;&lt;li&gt;Maior integridade&lt;/li&gt;&#xA;&lt;li&gt;Facilidade de manutenção&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;&#xA;&lt;p&gt;Investir em modelagem de dados é essencial para construir sistemas preparados para crescimento sustentável.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ETL na Prática: Transformando Dados em Informação Estratégica</title>
       <link>http://localhost:1313/posts/etl-pratica/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/etl-pratica/</guid>
-      <description>&lt;h1 id=&#34;etl-na-prática-transformando-dados-em-informação-estratégica&#34;&gt;ETL na Prática: Transformando Dados em Informação Estratégica&lt;/h1&gt;
-&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.&lt;/p&gt;
-&lt;p&gt;O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;o-que-é-etl&#34;&gt;O que é ETL?&lt;/h1&gt;
-&lt;p&gt;ETL representa três etapas fundamentais:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Extract (Extração)&lt;/li&gt;
-&lt;li&gt;Transform (Transformação)&lt;/li&gt;
-&lt;li&gt;Load (Carga)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Otimizador de Sistema (C#)</title>
-      <link>http://localhost:1313/projects/otimizador-csharp/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/otimizador-csharp/</guid>
-      <description>&lt;p&gt;Projeto em desenvolvimento focado em otimização de desempenho e uso eficiente de recursos do sistema.&lt;/p&gt;
-&lt;p&gt;Foco em melhorar performance e reduzir consumo de recursos.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;etl-na-prática-transformando-dados-em-informação-estratégica&#34;&gt;ETL na Prática: Transformando Dados em Informação Estratégica&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Em um cenário onde empresas geram grandes volumes de informações diariamente, transformar dados brutos em conhecimento estratégico tornou-se uma necessidade.&lt;/p&gt;&#xA;&lt;p&gt;O processo ETL (Extract, Transform, Load) é uma das principais técnicas utilizadas na Engenharia de Dados para coletar, organizar e disponibilizar informações confiáveis para análise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;o-que-é-etl&#34;&gt;O que é ETL?&lt;/h1&gt;&#xA;&lt;p&gt;ETL representa três etapas fundamentais:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extract (Extração)&lt;/li&gt;&#xA;&lt;li&gt;Transform (Transformação)&lt;/li&gt;&#xA;&lt;li&gt;Load (Carga)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sistema AntiCheat em Python</title>
       <link>http://localhost:1313/projects/anti-cheat/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/anti-cheat/</guid>
-      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;🔍 Visão geral&lt;/h2&gt;
-&lt;p&gt;Sistema de varredura de arquivos suspeitos em computadores.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Scan de diretórios do sistema&lt;/li&gt;
-&lt;li&gt;Hash SHA256 para validação&lt;/li&gt;
-&lt;li&gt;Detecção de padrões suspeitos&lt;/li&gt;
-&lt;li&gt;Exportação CSV&lt;/li&gt;
-&lt;li&gt;Integração com Discord&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-tecnologias&#34;&gt;🧠 Tecnologias&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;psutil&lt;/li&gt;
-&lt;li&gt;hashlib&lt;/li&gt;
-&lt;li&gt;tqdm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-resultado&#34;&gt;📌 Resultado&lt;/h2&gt;
-&lt;p&gt;Sistema capaz de analisar milhares de arquivos com performance otimizada.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;🔍 Visão geral&lt;/h2&gt;&#xA;&lt;p&gt;Sistema desenvolvido em &lt;strong&gt;Python para análise e identificação de arquivos potencialmente suspeitos&lt;/strong&gt; em computadores.&lt;/p&gt;&#xA;&lt;p&gt;A aplicação realiza uma varredura automatizada do sistema, combinando análise de arquivos, geração de hashes e identificação de padrões para auxiliar na detecção de possíveis ameaças.&lt;/p&gt;&#xA;&lt;div align=&#34;center&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;http://localhost:1313/images/anticheat.png&#34; alt=&#34;Sistema AntiCheat em Python&#34; width=&#34;900&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Varredura automatizada de diretórios e arquivos do sistema&lt;/li&gt;&#xA;&lt;li&gt;Geração de hashes &lt;strong&gt;SHA-256&lt;/strong&gt; para identificação e validação de arquivos&lt;/li&gt;&#xA;&lt;li&gt;Análise de padrões potencialmente suspeitos&lt;/li&gt;&#xA;&lt;li&gt;Processamento otimizado para grandes volumes de arquivos&lt;/li&gt;&#xA;&lt;li&gt;Exportação dos resultados em &lt;strong&gt;CSV&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Integração com &lt;strong&gt;Discord&lt;/strong&gt; para notificações e acompanhamento das análises&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-tecnologias&#34;&gt;🧠 Tecnologias&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;psutil&lt;/strong&gt; — monitoramento e interação com recursos do sistema&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;hashlib&lt;/strong&gt; — geração e validação de hashes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;tqdm&lt;/strong&gt; — acompanhamento do progresso das varreduras&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-resultado&#34;&gt;📌 Resultado&lt;/h2&gt;&#xA;&lt;p&gt;Uma ferramenta de análise automatizada capaz de processar &lt;strong&gt;milhares de arquivos&lt;/strong&gt;, organizando os resultados e identificando possíveis arquivos suspeitos de forma eficiente.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Sistema de Estoque (Spring Boot)</title>
+      <title></title>
+      <link>http://localhost:1313/projects/automacao-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/automacao-python/</guid>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;🔄 Visão geral&lt;/h2&gt;&#xA;&lt;p&gt;Desenvolvimento de &lt;strong&gt;robôs, scripts e ferramentas em Python para automação de tarefas em servidores e ambientes de infraestrutura&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Os projetos têm como objetivo &lt;strong&gt;reduzir atividades manuais, otimizar processos recorrentes e aumentar a eficiência operacional&lt;/strong&gt;, criando soluções mais rápidas, consistentes e confiáveis.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-aplicações&#34;&gt;⚙️ Aplicações&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automação de tarefas repetitivas&lt;/li&gt;&#xA;&lt;li&gt;Execução e monitoramento de rotinas em servidores&lt;/li&gt;&#xA;&lt;li&gt;Processamento automatizado de arquivos e dados&lt;/li&gt;&#xA;&lt;li&gt;Scripts para manutenção e gerenciamento de ambientes&lt;/li&gt;&#xA;&lt;li&gt;Execução de processos em lote&lt;/li&gt;&#xA;&lt;li&gt;Redução de intervenções manuais e erros operacionais&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias&#34;&gt;🧠 Tecnologias&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Automação de processos&lt;/li&gt;&#xA;&lt;li&gt;Scripts para servidores&lt;/li&gt;&#xA;&lt;li&gt;Manipulação de arquivos e dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-resultado&#34;&gt;📌 Resultado&lt;/h2&gt;&#xA;&lt;p&gt;Soluções desenvolvidas para transformar tarefas manuais e repetitivas em &lt;strong&gt;processos automatizados, eficientes e padronizados&lt;/strong&gt;, proporcionando ganho de produtividade e maior confiabilidade na execução das rotinas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/dashboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dashboards/</guid>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;📊 Visão geral&lt;/h2&gt;&#xA;&lt;p&gt;Desenvolvimento de &lt;strong&gt;dashboards e soluções de Business Intelligence&lt;/strong&gt; para diferentes áreas de negócio, transformando dados brutos em informações claras e relevantes para apoiar decisões estratégicas.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-áreas-atendidas&#34;&gt;🏢 Áreas atendidas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Financeiro&lt;/strong&gt; — acompanhamento de receitas, despesas e indicadores financeiros&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Recursos Humanos&lt;/strong&gt; — análise de colaboradores, indicadores e desempenho&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Marketing&lt;/strong&gt; — acompanhamento de campanhas, leads, conversões e resultados&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comercial&lt;/strong&gt; — análise de vendas, metas, desempenho e resultados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-objetivo&#34;&gt;🎯 Objetivo&lt;/h2&gt;&#xA;&lt;p&gt;Criar dashboards &lt;strong&gt;interativos, intuitivos e orientados a indicadores&lt;/strong&gt;, facilitando a visualização de informações e permitindo que gestores acompanhem resultados e identifiquem oportunidades de melhoria.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/projects/estoque-spring/</link>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/estoque-spring/</guid>
-      <description>&lt;p&gt;Sistema backend em construção para controle de estoque.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CRUD de produtos&lt;/li&gt;
-&lt;li&gt;Organização de dados&lt;/li&gt;
-&lt;li&gt;Estrutura escalável&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;📦 Visão geral&lt;/h2&gt;&#xA;&lt;p&gt;Sistema &lt;strong&gt;backend para gerenciamento e controle de estoque&lt;/strong&gt;, desenvolvido com foco na organização de produtos, controle de informações e construção de uma arquitetura preparada para evolução.&lt;/p&gt;&#xA;&lt;p&gt;O projeto está em desenvolvimento e busca aplicar boas práticas de desenvolvimento backend, organização de código e persistência de dados.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cadastro, consulta, atualização e exclusão de produtos (&lt;strong&gt;CRUD&lt;/strong&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Gerenciamento e organização das informações de estoque&lt;/li&gt;&#xA;&lt;li&gt;Estrutura preparada para expansão de funcionalidades&lt;/li&gt;&#xA;&lt;li&gt;Separação de responsabilidades entre as camadas da aplicação&lt;/li&gt;&#xA;&lt;li&gt;Persistência e gerenciamento de dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias&#34;&gt;🧠 Tecnologias&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Spring Boot&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;JPA / Hibernate&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Maven&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-objetivo&#34;&gt;📌 Objetivo&lt;/h2&gt;&#xA;&lt;p&gt;Construir uma aplicação backend &lt;strong&gt;organizada, escalável e de fácil manutenção&lt;/strong&gt;, servindo como base para futuras funcionalidades, como movimentação de estoque, controle de entradas e saídas, categorias, usuários e relatórios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/otimizador-csharp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/otimizador-csharp/</guid>
+      <description>&lt;h2 id=&#34;-visão-geral&#34;&gt;⚡ Visão geral&lt;/h2&gt;&#xA;&lt;p&gt;Aplicação em desenvolvimento voltada para &lt;strong&gt;otimização de desempenho e gerenciamento eficiente dos recursos do sistema operacional&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O projeto busca identificar gargalos, reduzir processos e serviços desnecessários e aplicar otimizações que contribuam para uma utilização mais eficiente dos recursos disponíveis.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Análise e otimização do uso de recursos do sistema&lt;/li&gt;&#xA;&lt;li&gt;Gerenciamento de processos e serviços&lt;/li&gt;&#xA;&lt;li&gt;Limpeza de arquivos e dados desnecessários&lt;/li&gt;&#xA;&lt;li&gt;Aplicação de ajustes de desempenho&lt;/li&gt;&#xA;&lt;li&gt;Monitoramento de recursos do sistema&lt;/li&gt;&#xA;&lt;li&gt;Opções para aplicar e restaurar configurações&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-objetivo&#34;&gt;🎯 Objetivo&lt;/h2&gt;&#xA;&lt;p&gt;Desenvolver uma ferramenta capaz de &lt;strong&gt;melhorar o desempenho do sistema, reduzir consumo desnecessário de recursos e proporcionar maior controle sobre configurações do ambiente&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contato</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;h2 id=&#34;entre-em-contato&#34;&gt;Entre em contato&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/isaacmacb&#34;&gt;https://github.com/isaacmacb&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Email: &lt;a href=&#34;mailto:isaacmacielbe@gmail.com&#34;&gt;isaacmacielbe@gmail.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&#34;&gt;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;entre-em-contato&#34;&gt;Entre em contato&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/isaacmacb&#34;&gt;https://github.com/isaacmacb&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:isaacmacielbe@gmail.com&#34;&gt;isaacmacielbe@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&#34;&gt;https://www.linkedin.com/in/isaac-maciel-044a14321/?isSelfProfile=false&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Currículo</title>
       <link>http://localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cv/</guid>
-      <description>&lt;h1 id=&#34;isaac-maciel&#34;&gt;Isaac Maciel&lt;/h1&gt;
-&lt;h2 id=&#34;formação&#34;&gt;Formação&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Análise e Desenvolvimento de Sistemas&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
-&lt;p&gt;📄 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/cv/Isaac-Maciel-Curriculo.pdf&#34;&gt;Baixar currículo em PDF&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;conheça-meu-curriculo-abaixo&#34;&gt;Conheça meu curriculo abaixo:&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/cv/Isaac-Maciel-Curriculo.pdf&#34;&gt;Baixar currículo em PDF&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sobre mim</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Sou desenvolvedor Backend focado na construção de sistemas, automação e ferramentas de segurança.&lt;/p&gt;
-&lt;p&gt;Sou fundador da ADVANNCE, empresa inicialmente criada como projeto de aprendizado que evoluiu para uma fonte de renda e desenvolvimento contínuo de soluções.&lt;/p&gt;
-&lt;p&gt;Atuo principalmente com C# e Java, desenvolvendo aplicações voltadas para APIs, análise de dados e automação de processos, com foco em desempenho, escalabilidade e organização de código.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-foco-profissional&#34;&gt;🎯 Foco profissional&lt;/h2&gt;
-&lt;p&gt;Meu foco principal está em:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Sou desenvolvedor Backend focado na construção de sistemas, automação e ferramentas de segurança.&lt;/p&gt;&#xA;&lt;p&gt;Sou fundador da ADVANNCE, empresa inicialmente criada como projeto de aprendizado que evoluiu para uma fonte de renda e desenvolvimento contínuo de soluções.&lt;/p&gt;&#xA;&lt;p&gt;Atuo principalmente com C# e Java, desenvolvendo aplicações voltadas para APIs, análise de dados e automação de processos, com foco em desempenho, escalabilidade e organização de código.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-foco-profissional&#34;&gt;🎯 Foco profissional&lt;/h2&gt;&#xA;&lt;p&gt;Meu foco principal está em:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

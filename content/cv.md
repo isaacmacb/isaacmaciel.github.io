@@ -3,11 +3,7 @@ title: "Currículo"
 url: "/cv/"
 ---
 
-# Isaac Maciel
-
-## Formação
-
-**Análise e Desenvolvimento de Sistemas**
+# Conheça meu curriculo abaixo:
 
 ---
 

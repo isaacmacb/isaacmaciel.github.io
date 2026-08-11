@@ -4,7 +4,7 @@ title: "Home"
 
 # 👋 Olá, eu sou Isaac Maciel
 
-Desenvolvedor focado em **Python, Java e sistemas backend**
+Desenvolvedor focado em **Back-end & Desktop**
 
 ---
 
@@ -14,16 +14,18 @@ Desenvolvedor focado em **Python, Java e sistemas backend**
 - Automação e scripts em Python
 - Sistemas de análise e segurança
 - Projetos pessoais de software
+- Sistema em desktop de alta performance
 
 ---
 
 ## 🧠 Stack principal
 
-- Python
+- C# / WPF 
 - Java / Spring Boot
 - Docker
 - Linux
 - Git
+- Html, css e Javascript
 
 ---
 
