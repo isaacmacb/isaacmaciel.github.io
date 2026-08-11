@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker para Desenvolvedores | Isaac Maciel</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <div class="logo">
+                    <a href="/">Isaac Maciel</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <span class="moon">🌙</span>
+                            <span class="sun">☀️</span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="/about/">Sobre</a></li>
+                    <li><a href="/projects/">Projetos</a></li>
+                    <li><a href="/posts/" class="active">Artigos</a></li>
+                    <li><a href="/cv/">CV</a></li>
+                    <li><a href="/contact/">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="post-single">
+                <header class="page-header">
+                    <h1>Docker para Desenvolvedores Backend: Da Máquina Local à Produção</h1>
+                    <div class="post-meta">
+                        <span class="date">📅 6 de julho de 2026</span>
+                        <span class="category">🐳 DevOps</span>
+                        <span class="read-time">⏱️ 3 min de leitura</span>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <div class="section">
+                        <h2><span class="emoji">🔍</span> Visão Geral</h2>
+                        <p>Durante o desenvolvimento de software, diferenças entre ambientes podem gerar erros e dificuldades de configuração.</p>
+                        <p>O <strong>Docker</strong> surgiu como uma solução para criar ambientes padronizados e facilitar o desenvolvimento, testes e implantação de aplicações.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">⚙️</span> O que é Docker?</h2>
+                        <p>Docker é uma plataforma de <strong>containers</strong> que permite empacotar aplicações junto com suas dependências.</p>
+                        <p>Com isso, uma aplicação pode funcionar da mesma forma em diferentes ambientes.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">📌</span> Benefícios</h2>
+                        <ul>
+                            <li>✅ Ambientes padronizados</li>
+                            <li>✅ Portabilidade entre sistemas</li>
+                            <li>✅ Facilidade de escalabilidade</li>
+                            <li>✅ Integração com CI/CD</li>
+                            <li>✅ Redução de conflitos de dependências</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><span class="emoji">🧠</span> Tecnologias</h2>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Docker Compose</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <a href="/posts/" class="back-link">← Voltar para artigos</a>
+                </div>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2026 <a href="/">Isaac Maciel</a></span>
+            <span>Desenvolvido com ❤️</span>
+        </footer>
+    </div>
+
+    <a href="#" id="top-link" class="top-link" aria-label="Voltar ao topo">↑</a>
+
+    <script src="/js/main.js"></script>
+    <script>
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+        } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+</body>
+</html>
