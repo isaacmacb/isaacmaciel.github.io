@@ -19,25 +19,4 @@
 &lt;li&gt;Transform (Transformação)&lt;/li&gt;
 &lt;li&gt;Load (Carga)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description></item><item><title>Sistema AntiCheat em Python</title><link>https://isaacspace.netlify.app/projects/anti-cheat/</link><pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate><guid>https://isaacspace.netlify.app/projects/anti-cheat/</guid><description>&lt;h2 id="-visão-geral"&gt;🔍 Visão geral&lt;/h2&gt;
-&lt;p&gt;Sistema de varredura de arquivos suspeitos em computadores.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="-funcionalidades"&gt;⚙️ Funcionalidades&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Scan de diretórios do sistema&lt;/li&gt;
-&lt;li&gt;Hash SHA256 para validação&lt;/li&gt;
-&lt;li&gt;Detecção de padrões suspeitos&lt;/li&gt;
-&lt;li&gt;Exportação CSV&lt;/li&gt;
-&lt;li&gt;Integração com Discord&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="-tecnologias"&gt;🧠 Tecnologias&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Python&lt;/li&gt;
-&lt;li&gt;psutil&lt;/li&gt;
-&lt;li&gt;hashlib&lt;/li&gt;
-&lt;li&gt;tqdm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="-resultado"&gt;📌 Resultado&lt;/h2&gt;
-&lt;p&gt;Sistema capaz de analisar milhares de arquivos com performance otimizada.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Esse processo permite integrar dados de diferentes fontes e preparar informações para relatórios, dashboards e análises estratégicas.&lt;/p&gt;</description></item></channel></rss>
