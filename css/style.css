@@ -863,32 +863,29 @@ h1 {
     transition: background 0.4s ease;
 }
 
+/* ==========================================
+   REMOVER TRAÇO DOS BOTÕES E LINKS
+   ========================================== */
+.hero .btn,
+.hero .btn-primary,
+.hero .btn-secondary,
+.socials a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.hero .btn:hover,
+.hero .btn-primary:hover,
+.hero .btn-secondary:hover,
+.socials a:hover {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* Remove também do badge/subtítulo */
 .badge {
-    margin-top: 0.4rem;
-    background: rgba(88, 166, 255, 0.15);
-    border: 1px solid rgba(88, 166, 255, 0.2);
-    padding: 0.2rem 1rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #58a6ff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-}
-
-.subtitle {
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    color: #8b949e;
-    max-width: 450px;
-    line-height: 1.5;
-    transition: color 0.3s ease;
-}
-
-.subtitle strong {
-    color: #f0f6fc;
-    transition: color 0.3s ease;
+    border-bottom: none !important;
+    text-decoration: none !important;
 }
 
 /* ==========================================
